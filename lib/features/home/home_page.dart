@@ -151,13 +151,15 @@ class _DepartureCard extends StatelessWidget {
                       style: FilledButton.styleFrom(
                         backgroundColor: Palette.gold,
                         foregroundColor: Palette.navy,
-                        textStyle: const TextStyle(fontWeight: FontWeight.w800),
                         padding: const EdgeInsets.symmetric(
                           horizontal: 14,
                           vertical: 9,
                         ),
                       ),
-                      child: Text(action),
+                      child: Text(
+                        action,
+                        style: const TextStyle(fontWeight: FontWeight.w800),
+                      ),
                     ),
                   ],
                 ),
