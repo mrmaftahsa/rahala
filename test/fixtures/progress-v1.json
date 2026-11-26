@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "mastered": ["flag.ma", "flag.eg", "flag.sa", "flag.jo", "capital.tn", "capital.jp"],
+  "mistakes": ["flag.tn", "capital.ma"],
+  "bestStars": {"arab.flag": 3, "arab.capital": 1, "asia.flag": 2, "world.discovery": 1},
+  "sound": false,
+  "reducedMotion": true
+}
