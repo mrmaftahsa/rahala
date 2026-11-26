@@ -1,0 +1,726 @@
+{
+  "schemaVersion": 1,
+  "countries": [
+    {
+      "id": "ma",
+      "name": "المغرب",
+      "capital": "الرباط",
+      "aliases": [
+        "المملكة المغربية"
+      ],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "arab"
+      ],
+      "flag": "assets/flags/ma.png",
+      "fact": "تمتد جبال الأطلس في داخل المغرب.",
+      "source": "africa/mo.json"
+    },
+    {
+      "id": "eg",
+      "name": "مصر",
+      "capital": "القاهرة",
+      "aliases": [
+        "جمهورية مصر العربية"
+      ],
+      "continents": [
+        "africa",
+        "asia"
+      ],
+      "chapters": [
+        "arab"
+      ],
+      "flag": "assets/flags/eg.png",
+      "fact": "يشكّل نهر النيل واديًا ودلتا وسط الأراضي الصحراوية في مصر.",
+      "source": "africa/eg.json"
+    },
+    {
+      "id": "sa",
+      "name": "السعودية",
+      "capital": "الرياض",
+      "aliases": [
+        "المملكة العربية السعودية"
+      ],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "arab"
+      ],
+      "flag": "assets/flags/sa.png",
+      "fact": "تطلّ السعودية من الغرب على البحر الأحمر.",
+      "source": "middle-east/sa.json"
+    },
+    {
+      "id": "jo",
+      "name": "الأردن",
+      "capital": "عمّان",
+      "aliases": [
+        "المملكة الأردنية الهاشمية"
+      ],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "arab"
+      ],
+      "flag": "assets/flags/jo.png",
+      "fact": "يقع البحر الميت على امتداد الشقّ الجيولوجي غربيّ الأردن.",
+      "source": "middle-east/jo.json"
+    },
+    {
+      "id": "tn",
+      "name": "تونس",
+      "capital": "تونس",
+      "aliases": [
+        "الجمهورية التونسية"
+      ],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "arab"
+      ],
+      "flag": "assets/flags/tn.png",
+      "fact": "تنتشر الجبال في شمال تونس، وتمتد الصحراء إلى جنوبها.",
+      "source": "africa/ts.json"
+    },
+    {
+      "id": "gh",
+      "name": "غانا",
+      "capital": "أكرا",
+      "aliases": [],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "flag": "assets/flags/gh.png",
+      "fact": "تطلّ غانا على خليج غينيا في غرب إفريقيا.",
+      "source": "africa/gh.json"
+    },
+    {
+      "id": "ng",
+      "name": "نيجيريا",
+      "capital": "أبوجا",
+      "aliases": [],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "flag": "assets/flags/ng.png",
+      "fact": "تطلّ نيجيريا على خليج غينيا، وتمتدّ السهول في شمالها.",
+      "source": "africa/ni.json"
+    },
+    {
+      "id": "ke",
+      "name": "كينيا",
+      "capital": "نيروبي",
+      "aliases": [],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "flag": "assets/flags/ke.png",
+      "fact": "يمرّ الوادي المتصدّع الكبير عبر مرتفعات كينيا الوسطى.",
+      "source": "africa/ke.json"
+    },
+    {
+      "id": "et",
+      "name": "إثيوبيا",
+      "capital": "أديس أبابا",
+      "aliases": [],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "flag": "assets/flags/et.png",
+      "fact": "يقسم الوادي المتصدّع الكبير المرتفعات في وسط إثيوبيا.",
+      "source": "africa/et.json"
+    },
+    {
+      "id": "sn",
+      "name": "السنغال",
+      "capital": "داكار",
+      "aliases": [],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "flag": "assets/flags/sn.png",
+      "fact": "تقع السنغال على ساحل المحيط الأطلسي في غرب إفريقيا.",
+      "source": "africa/sg.json"
+    },
+    {
+      "id": "jp",
+      "name": "اليابان",
+      "capital": "طوكيو",
+      "aliases": [],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "flag": "assets/flags/jp.png",
+      "fact": "تقع اليابان على سلسلة جزر في شرق آسيا، وتغلب الجبال على تضاريسها.",
+      "source": "east-n-southeast-asia/ja.json"
+    },
+    {
+      "id": "cn",
+      "name": "الصين",
+      "capital": "بكين",
+      "aliases": [
+        "جمهورية الصين الشعبية"
+      ],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "flag": "assets/flags/cn.png",
+      "fact": "تنتشر الهضاب العالية والصحاري في غرب الصين.",
+      "source": "east-n-southeast-asia/ch.json"
+    },
+    {
+      "id": "in",
+      "name": "الهند",
+      "capital": "نيودلهي",
+      "aliases": [],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "flag": "assets/flags/in.png",
+      "fact": "تمتدّ جبال الهيمالايا في شمال الهند.",
+      "source": "south-asia/in.json"
+    },
+    {
+      "id": "th",
+      "name": "تايلاند",
+      "capital": "بانكوك",
+      "aliases": [],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "flag": "assets/flags/th.png",
+      "fact": "تقع هضبة كورات في شرق تايلاند.",
+      "source": "east-n-southeast-asia/th.json"
+    },
+    {
+      "id": "kr",
+      "name": "كوريا الجنوبية",
+      "capital": "سيول",
+      "aliases": [
+        "جمهورية كوريا"
+      ],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "flag": "assets/flags/kr.png",
+      "fact": "تقع كوريا الجنوبية في النصف الجنوبي من شبه الجزيرة الكورية.",
+      "source": "east-n-southeast-asia/ks.json"
+    },
+    {
+      "id": "fr",
+      "name": "فرنسا",
+      "capital": "باريس",
+      "aliases": [],
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "flag": "assets/flags/fr.png",
+      "fact": "تمتدّ جبال البرانس في جنوب البرّ الفرنسي الأوروبي.",
+      "source": "europe/fr.json"
+    },
+    {
+      "id": "de",
+      "name": "ألمانيا",
+      "capital": "برلين",
+      "aliases": [],
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "flag": "assets/flags/de.png",
+      "fact": "تقع جبال الألب البافارية في جنوب ألمانيا.",
+      "source": "europe/gm.json"
+    },
+    {
+      "id": "it",
+      "name": "إيطاليا",
+      "capital": "روما",
+      "aliases": [],
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "flag": "assets/flags/it.png",
+      "fact": "تمتدّ شبه الجزيرة الإيطالية في وسط البحر المتوسط.",
+      "source": "europe/it.json"
+    },
+    {
+      "id": "pt",
+      "name": "البرتغال",
+      "capital": "لشبونة",
+      "aliases": [],
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "flag": "assets/flags/pt.png",
+      "fact": "يجري نهر تاجة غربًا عبر البرتغال.",
+      "source": "europe/po.json"
+    },
+    {
+      "id": "no",
+      "name": "النرويج",
+      "capital": "أوسلو",
+      "aliases": [],
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "flag": "assets/flags/no.png",
+      "fact": "تتخلّل ساحل النرويج خلجان عميقة وضيّقة تُسمّى الفيوردات.",
+      "source": "europe/no.json"
+    },
+    {
+      "id": "ca",
+      "name": "كندا",
+      "capital": "أوتاوا",
+      "aliases": [],
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "flag": "assets/flags/ca.png",
+      "fact": "لكندا سواحل على المحيطات الأطلسي والهادئ والمتجمّد الشمالي.",
+      "source": "north-america/ca.json"
+    },
+    {
+      "id": "us",
+      "name": "الولايات المتحدة",
+      "capital": "واشنطن العاصمة",
+      "aliases": [
+        "الولايات المتحدة الأمريكية"
+      ],
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "flag": "assets/flags/us.png",
+      "fact": "تقع جزر هاواي البركانية ضمن الولايات المتحدة.",
+      "source": "north-america/us.json"
+    },
+    {
+      "id": "mx",
+      "name": "المكسيك",
+      "capital": "مكسيكو سيتي",
+      "aliases": [
+        "الولايات المتحدة المكسيكية"
+      ],
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "flag": "assets/flags/mx.png",
+      "fact": "تضمّ المكسيك هضابًا عالية وسهولًا ساحلية منخفضة.",
+      "source": "north-america/mx.json"
+    },
+    {
+      "id": "cu",
+      "name": "كوبا",
+      "capital": "هافانا",
+      "aliases": [],
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "flag": "assets/flags/cu.png",
+      "fact": "تقع جزيرة كوبا في منطقة البحر الكاريبي.",
+      "source": "central-america-n-caribbean/cu.json"
+    },
+    {
+      "id": "cr",
+      "name": "كوستاريكا",
+      "capital": "سان خوسيه",
+      "aliases": [],
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "flag": "assets/flags/cr.png",
+      "fact": "تطلّ كوستاريكا على البحر الكاريبي والمحيط الهادئ.",
+      "source": "central-america-n-caribbean/cs.json"
+    },
+    {
+      "id": "br",
+      "name": "البرازيل",
+      "capital": "برازيليا",
+      "aliases": [],
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "flag": "assets/flags/br.png",
+      "fact": "تقع البرازيل في شرق أمريكا الجنوبية وتطلّ على المحيط الأطلسي.",
+      "source": "south-america/br.json"
+    },
+    {
+      "id": "ar",
+      "name": "الأرجنتين",
+      "capital": "بوينس آيرس",
+      "aliases": [],
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "flag": "assets/flags/ar.png",
+      "fact": "تمتدّ هضبة باتاغونيا في جنوب الأرجنتين.",
+      "source": "south-america/ar.json"
+    },
+    {
+      "id": "cl",
+      "name": "تشيلي",
+      "capital": "سانتياغو",
+      "aliases": [
+        "شيلي"
+      ],
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "flag": "assets/flags/cl.png",
+      "fact": "تمتدّ جبال الأنديز على الجانب الشرقي من تشيلي.",
+      "source": "south-america/ci.json",
+      "capitalNote": "سانتياغو هي العاصمة، ويقع مقرّ السلطة التشريعية في فالبارايسو."
+    },
+    {
+      "id": "pe",
+      "name": "بيرو",
+      "capital": "ليما",
+      "aliases": [],
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "flag": "assets/flags/pe.png",
+      "fact": "يضمّ شرق بيرو جزءًا من الأراضي المنخفضة في حوض الأمازون.",
+      "source": "south-america/pe.json"
+    },
+    {
+      "id": "co",
+      "name": "كولومبيا",
+      "capital": "بوغوتا",
+      "aliases": [],
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "flag": "assets/flags/co.png",
+      "fact": "لكولومبيا سواحل على البحر الكاريبي والمحيط الهادئ.",
+      "source": "south-america/co.json"
+    },
+    {
+      "id": "au",
+      "name": "أستراليا",
+      "capital": "كانبرا",
+      "aliases": [],
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "flag": "assets/flags/au.png",
+      "fact": "تقع أستراليا بين المحيط الهندي وجنوب المحيط الهادئ.",
+      "source": "australia-oceania/as.json"
+    },
+    {
+      "id": "nz",
+      "name": "نيوزيلندا",
+      "capital": "ويلينغتون",
+      "aliases": [],
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "flag": "assets/flags/nz.png",
+      "fact": "تقع جزر نيوزيلندا إلى الجنوب الشرقي من أستراليا.",
+      "source": "australia-oceania/nz.json"
+    },
+    {
+      "id": "fj",
+      "name": "فيجي",
+      "capital": "سوفا",
+      "aliases": [],
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "flag": "assets/flags/fj.png",
+      "fact": "تقع سوفا في جزيرة فيتي ليفو في جنوب المحيط الهادئ.",
+      "source": "australia-oceania/fj.json"
+    },
+    {
+      "id": "ws",
+      "name": "ساموا",
+      "capital": "أبيا",
+      "aliases": [],
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "flag": "assets/flags/ws.png",
+      "fact": "تتكوّن ساموا من جزيرتين رئيسيتين هما سافاي وأوبولو وعدد من الجزر الأصغر.",
+      "source": "australia-oceania/ws.json"
+    },
+    {
+      "id": "to",
+      "name": "تونغا",
+      "capital": "نوكوالوفا",
+      "aliases": [],
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "flag": "assets/flags/to.png",
+      "fact": "تونغا أرخبيل في جنوب المحيط الهادئ.",
+      "source": "australia-oceania/tn.json"
+    }
+  ],
+  "missions": [
+    {
+      "id": "arab.flag",
+      "chapter": "arab",
+      "flag": [
+        "ma",
+        "eg",
+        "sa",
+        "jo",
+        "tn"
+      ]
+    },
+    {
+      "id": "arab.capital",
+      "chapter": "arab",
+      "capital": [
+        "ma",
+        "eg",
+        "sa",
+        "jo",
+        "tn"
+      ]
+    },
+    {
+      "id": "africa.flag",
+      "chapter": "africa",
+      "flag": [
+        "gh",
+        "ng",
+        "ke",
+        "et",
+        "sn"
+      ]
+    },
+    {
+      "id": "africa.capital",
+      "chapter": "africa",
+      "capital": [
+        "gh",
+        "ng",
+        "ke",
+        "et",
+        "sn"
+      ]
+    },
+    {
+      "id": "asia.flag",
+      "chapter": "asia",
+      "flag": [
+        "jp",
+        "cn",
+        "in",
+        "th",
+        "kr"
+      ]
+    },
+    {
+      "id": "asia.capital",
+      "chapter": "asia",
+      "capital": [
+        "jp",
+        "cn",
+        "in",
+        "th",
+        "kr"
+      ]
+    },
+    {
+      "id": "europe.flag",
+      "chapter": "europe",
+      "flag": [
+        "fr",
+        "de",
+        "it",
+        "pt",
+        "no"
+      ]
+    },
+    {
+      "id": "europe.capital",
+      "chapter": "europe",
+      "capital": [
+        "fr",
+        "de",
+        "it",
+        "pt",
+        "no"
+      ]
+    },
+    {
+      "id": "north_america.flag",
+      "chapter": "north_america",
+      "flag": [
+        "ca",
+        "us",
+        "mx",
+        "cu",
+        "cr"
+      ]
+    },
+    {
+      "id": "north_america.capital",
+      "chapter": "north_america",
+      "capital": [
+        "ca",
+        "us",
+        "mx",
+        "cu",
+        "cr"
+      ]
+    },
+    {
+      "id": "south_america.flag",
+      "chapter": "south_america",
+      "flag": [
+        "br",
+        "ar",
+        "cl",
+        "pe",
+        "co"
+      ]
+    },
+    {
+      "id": "south_america.capital",
+      "chapter": "south_america",
+      "capital": [
+        "br",
+        "ar",
+        "cl",
+        "pe",
+        "co"
+      ]
+    },
+    {
+      "id": "oceania.flag",
+      "chapter": "oceania",
+      "flag": [
+        "au",
+        "nz",
+        "fj",
+        "ws",
+        "to"
+      ]
+    },
+    {
+      "id": "oceania.capital",
+      "chapter": "oceania",
+      "capital": [
+        "au",
+        "nz",
+        "fj",
+        "ws",
+        "to"
+      ]
+    },
+    {
+      "id": "world.discovery",
+      "chapter": "world",
+      "flag": [
+        "ma",
+        "gh",
+        "jp",
+        "fr",
+        "ca"
+      ],
+      "capital": [
+        "eg",
+        "in",
+        "br",
+        "nz",
+        "ar"
+      ]
+    }
+  ]
+}
