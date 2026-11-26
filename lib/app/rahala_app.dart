@@ -6,6 +6,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import '../core/geography.dart';
 import '../core/progress.dart';
+import '../core/world_atlas.dart';
+import '../features/atlas/atlas_page.dart';
 import '../features/home/chapter_page.dart';
 import '../features/home/home_page.dart';
 import '../features/passport/passport_page.dart';
@@ -14,11 +16,18 @@ import '../features/settings/settings_page.dart';
 import 'theme.dart';
 
 class RahalaApp extends StatefulWidget {
-  const RahalaApp({super.key, this.catalog, this.backend, this.random});
+  const RahalaApp({
+    super.key,
+    this.catalog,
+    this.backend,
+    this.random,
+    this.atlas,
+  });
 
   final GeographyCatalog? catalog;
   final ProgressBackend? backend;
   final Random? random;
+  final WorldAtlas? atlas;
 
   @override
   State<RahalaApp> createState() => _RahalaAppState();
@@ -26,13 +35,14 @@ class RahalaApp extends StatefulWidget {
 
 class _RahalaAppState extends State<RahalaApp> {
   GameProgress? _progress;
+  late final _atlas = AtlasSource(initial: widget.atlas);
   late Future<GameProgress> _loading = _load();
 
   Future<GameProgress> _load() async {
     final catalog =
         widget.catalog ??
         GeographyCatalog.decode(
-          await rootBundle.loadString('assets/data/geography.v1.json'),
+          await rootBundle.loadString('assets/data/geography.v2.json'),
         );
     final progress = await GameProgress.open(
       catalog,
@@ -88,7 +98,11 @@ class _RahalaAppState extends State<RahalaApp> {
                     snapshot.hasError,
                 retry: () => setState(() => _loading = _load()),
               )
-            : _JourneyShell(progress: progress, random: widget.random),
+            : _JourneyShell(
+                progress: progress,
+                random: widget.random,
+                atlas: _atlas,
+              ),
       );
     },
   );
@@ -129,9 +143,14 @@ class _LoadingPage extends StatelessWidget {
 }
 
 class _JourneyShell extends StatefulWidget {
-  const _JourneyShell({required this.progress, this.random});
+  const _JourneyShell({
+    required this.progress,
+    required this.atlas,
+    this.random,
+  });
 
   final GameProgress progress;
+  final AtlasSource atlas;
   final Random? random;
 
   @override
@@ -157,6 +176,20 @@ class _JourneyShellState extends State<_JourneyShell> {
     );
   }
 
+  void _openCountry(Country country) {
+    Navigator.of(context).push(
+      _route(
+        CountryPage(
+          country: country,
+          source: widget.atlas,
+          stamped: widget.progress.value
+              .stamps(widget.progress.catalog)
+              .contains(country.id),
+        ),
+      ),
+    );
+  }
+
   void _openChapter(Chapter chapter) {
     Navigator.of(context).push(
       _route(
@@ -175,6 +208,7 @@ class _JourneyShellState extends State<_JourneyShell> {
       QuizPage(
         title: mission.title,
         progress: widget.progress,
+        atlas: widget.atlas,
         makeDeck: () => _builder.mission(mission),
         mission: mission,
         openNext: (next) => _playMission(next, replace: true),
@@ -191,12 +225,23 @@ class _JourneyShellState extends State<_JourneyShell> {
     Navigator.of(context).push(
       _route(
         PracticePage(
+          hasMaps: widget.progress.catalog.schemaVersion == 2,
           play: (chapter, mode) => Navigator.of(context).push(
             _route(
               QuizPage(
                 title: 'تدريب سريع',
                 progress: widget.progress,
-                makeDeck: () => _builder.practice(chapter, mode),
+                atlas: widget.atlas,
+                chapter: chapter,
+                makeDeck: () => _builder.practice(
+                  chapter,
+                  mode,
+                  review: [
+                    ...widget.progress.reviewIds,
+                    ...widget.progress.dueReviewIds,
+                  ],
+                  mastered: widget.progress.value.mastered,
+                ),
                 openNext: _playMission,
               ),
             ),
@@ -206,16 +251,19 @@ class _JourneyShellState extends State<_JourneyShell> {
     );
   }
 
-  void _review() {
-    final ids = widget.progress.reviewIds;
+  void _review({bool spaced = false}) {
+    final ids = spaced
+        ? widget.progress.dueReviewIds
+        : widget.progress.reviewIds;
     if (ids.isEmpty) return;
     Navigator.of(context).push(
       _route(
         QuizPage(
-          title: 'مراجعة الأخطاء',
+          title: spaced ? 'مراجعة الذاكرة' : 'مراجعة الأخطاء',
           progress: widget.progress,
+          atlas: widget.atlas,
           makeDeck: () => _builder.review(ids),
-          review: true,
+          review: !spaced,
           openNext: _playMission,
         ),
       ),
@@ -239,7 +287,11 @@ class _JourneyShellState extends State<_JourneyShell> {
                   Text('رحّالة', style: heading(context, size: 24)),
                 ],
               )
-            : Text(_tab == 1 ? 'جواز السفر' : 'الإعدادات'),
+            : Text(switch (_tab) {
+                1 => 'الأطلس',
+                2 => 'جواز السفر',
+                _ => 'الإعدادات',
+              }),
       ),
       body: switch (_tab) {
         0 => HomePage(
@@ -248,10 +300,17 @@ class _JourneyShellState extends State<_JourneyShell> {
           openChapter: _openChapter,
           openPractice: _practice,
           review: _review,
+          spacedReview: () => _review(spaced: true),
         ),
-        1 => PassportPage(
+        1 => AtlasPage(
+          catalog: widget.progress.catalog,
+          source: widget.atlas,
+          openCountry: _openCountry,
+        ),
+        2 => PassportPage(
           progress: widget.progress,
           goHome: () => setState(() => _tab = 0),
+          openCountry: _openCountry,
         ),
         _ => SettingsPage(progress: widget.progress),
       },
@@ -265,6 +324,10 @@ class _JourneyShellState extends State<_JourneyShell> {
           NavigationDestination(
             icon: Icon(Icons.explore_outlined),
             label: 'الرحلة',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.public_outlined),
+            label: 'الأطلس',
           ),
           NavigationDestination(
             icon: Icon(Icons.menu_book_outlined),

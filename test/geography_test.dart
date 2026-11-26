@@ -110,7 +110,9 @@ void main() {
     () {
       for (final invalidId in ['ma', 'jp', 'xx']) {
         final json =
-            jsonDecode(File('assets/data/geography.v1.json').readAsStringSync())
+            jsonDecode(
+                  File('test/fixtures/geography.v1.json').readAsStringSync(),
+                )
                 as Map<String, dynamic>;
         final countries = (json['missions'] as List).first['flag'] as List;
         countries[1] = invalidId;

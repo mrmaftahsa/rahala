@@ -131,7 +131,7 @@ class _SettingsPageState extends State<SettingsPage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(
-                'تضم هذه النسخة ${digits(progress.catalog.countries.length)} دولة في أسئلة الأعلام والعواصم.',
+                'تضم هذه النسخة ${digits(progress.catalog.countries.length)} دولة في أطلس رحّالة، وأربع طرق للعب والتعلّم.',
               ),
               const SizedBox(height: 9),
               OutlinedButton.icon(
@@ -144,7 +144,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     title: const Text('المصادر والتراخيص'),
                     content: const SingleChildScrollView(
                       child: Text(
-                        'العواصم والحقائق من أرشيف كتاب حقائق العالم. الرسوم الأصلية للأعلام من ويكيميديا كومنز عبر مشروع أعلام الدول. الخط: نوتو سانس عربي، بترخيص الخطوط المفتوحة.',
+                        'الحقائق من أرشيف كتاب حقائق العالم. الخرائط من ناتشورال إيرث، في الملك العام. الأعلام من ويكيميديا كومنز عبر مشروع أعلام الدول. الخط نوتو سانس عربي بترخيص الخطوط المفتوحة.',
                       ),
                     ),
                     actions: [

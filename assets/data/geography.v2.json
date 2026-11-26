@@ -1,0 +1,5113 @@
+{
+  "schemaVersion": 2,
+  "countries": [
+    {
+      "id": "ma",
+      "name": "المغرب",
+      "capital": "الرباط",
+      "aliases": [
+        "المملكة المغربية"
+      ],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa",
+        "arab"
+      ],
+      "flag": "assets/flags/ma.png",
+      "fact": "تمتد جبال الأطلس في داخل المغرب.",
+      "source": "africa/mo.json",
+      "region": "شمال إفريقيا",
+      "mapQuiz": false
+    },
+    {
+      "id": "eg",
+      "name": "مصر",
+      "capital": "القاهرة",
+      "aliases": [
+        "جمهورية مصر العربية"
+      ],
+      "continents": [
+        "africa",
+        "asia"
+      ],
+      "chapters": [
+        "africa",
+        "arab"
+      ],
+      "flag": "assets/flags/eg.png",
+      "fact": "يشكّل نهر النيل واديًا ودلتا وسط الأراضي الصحراوية في مصر.",
+      "source": "africa/eg.json",
+      "region": "شمال إفريقيا"
+    },
+    {
+      "id": "sa",
+      "name": "السعودية",
+      "capital": "الرياض",
+      "aliases": [
+        "المملكة العربية السعودية"
+      ],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia",
+        "arab"
+      ],
+      "flag": "assets/flags/sa.png",
+      "fact": "تطلّ السعودية من الغرب على البحر الأحمر.",
+      "source": "middle-east/sa.json",
+      "region": "غرب آسيا"
+    },
+    {
+      "id": "jo",
+      "name": "الأردن",
+      "capital": "عمّان",
+      "aliases": [
+        "المملكة الأردنية الهاشمية"
+      ],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia",
+        "arab"
+      ],
+      "flag": "assets/flags/jo.png",
+      "fact": "يقع البحر الميت على امتداد الشقّ الجيولوجي غربيّ الأردن.",
+      "source": "middle-east/jo.json",
+      "region": "غرب آسيا"
+    },
+    {
+      "id": "tn",
+      "name": "تونس",
+      "capital": "تونس",
+      "aliases": [
+        "الجمهورية التونسية"
+      ],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa",
+        "arab"
+      ],
+      "flag": "assets/flags/tn.png",
+      "fact": "تنتشر الجبال في شمال تونس، وتمتد الصحراء إلى جنوبها.",
+      "source": "africa/ts.json",
+      "region": "شمال إفريقيا"
+    },
+    {
+      "id": "gh",
+      "name": "غانا",
+      "capital": "أكرا",
+      "aliases": [],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "flag": "assets/flags/gh.png",
+      "fact": "تطلّ غانا على خليج غينيا في غرب إفريقيا.",
+      "source": "africa/gh.json",
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "ng",
+      "name": "نيجيريا",
+      "capital": "أبوجا",
+      "aliases": [],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "flag": "assets/flags/ng.png",
+      "fact": "تطلّ نيجيريا على خليج غينيا، وتمتدّ السهول في شمالها.",
+      "source": "africa/ni.json",
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "ke",
+      "name": "كينيا",
+      "capital": "نيروبي",
+      "aliases": [],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "flag": "assets/flags/ke.png",
+      "fact": "يمرّ الوادي المتصدّع الكبير عبر مرتفعات كينيا الوسطى.",
+      "source": "africa/ke.json",
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "et",
+      "name": "إثيوبيا",
+      "capital": "أديس أبابا",
+      "aliases": [],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "flag": "assets/flags/et.png",
+      "fact": "يقسم الوادي المتصدّع الكبير المرتفعات في وسط إثيوبيا.",
+      "source": "africa/et.json",
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "sn",
+      "name": "السنغال",
+      "capital": "داكار",
+      "aliases": [],
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "flag": "assets/flags/sn.png",
+      "fact": "تقع السنغال على ساحل المحيط الأطلسي في غرب إفريقيا.",
+      "source": "africa/sg.json",
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "jp",
+      "name": "اليابان",
+      "capital": "طوكيو",
+      "aliases": [],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "flag": "assets/flags/jp.png",
+      "fact": "تقع اليابان على سلسلة جزر في شرق آسيا، وتغلب الجبال على تضاريسها.",
+      "source": "east-n-southeast-asia/ja.json",
+      "region": "شرق آسيا"
+    },
+    {
+      "id": "cn",
+      "name": "الصين",
+      "capital": "بكين",
+      "aliases": [
+        "جمهورية الصين الشعبية"
+      ],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "flag": "assets/flags/cn.png",
+      "fact": "تنتشر الهضاب العالية والصحاري في غرب الصين.",
+      "source": "east-n-southeast-asia/ch.json",
+      "region": "شرق آسيا",
+      "mapQuiz": false
+    },
+    {
+      "id": "in",
+      "name": "الهند",
+      "capital": "نيودلهي",
+      "aliases": [],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "flag": "assets/flags/in.png",
+      "fact": "تمتدّ جبال الهيمالايا في شمال الهند.",
+      "source": "south-asia/in.json",
+      "region": "جنوب آسيا",
+      "mapQuiz": false
+    },
+    {
+      "id": "th",
+      "name": "تايلاند",
+      "capital": "بانكوك",
+      "aliases": [],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "flag": "assets/flags/th.png",
+      "fact": "تقع هضبة كورات في شرق تايلاند.",
+      "source": "east-n-southeast-asia/th.json",
+      "region": "جنوب شرق آسيا"
+    },
+    {
+      "id": "kr",
+      "name": "كوريا الجنوبية",
+      "capital": "سيول",
+      "aliases": [
+        "جمهورية كوريا"
+      ],
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "flag": "assets/flags/kr.png",
+      "fact": "تقع كوريا الجنوبية في النصف الجنوبي من شبه الجزيرة الكورية.",
+      "source": "east-n-southeast-asia/ks.json",
+      "region": "شرق آسيا"
+    },
+    {
+      "id": "fr",
+      "name": "فرنسا",
+      "capital": "باريس",
+      "aliases": [],
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "flag": "assets/flags/fr.png",
+      "fact": "تمتدّ جبال البرانس في جنوب البرّ الفرنسي الأوروبي.",
+      "source": "europe/fr.json",
+      "region": "غرب أوروبا"
+    },
+    {
+      "id": "de",
+      "name": "ألمانيا",
+      "capital": "برلين",
+      "aliases": [],
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "flag": "assets/flags/de.png",
+      "fact": "تقع جبال الألب البافارية في جنوب ألمانيا.",
+      "source": "europe/gm.json",
+      "region": "غرب أوروبا"
+    },
+    {
+      "id": "it",
+      "name": "إيطاليا",
+      "capital": "روما",
+      "aliases": [],
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "flag": "assets/flags/it.png",
+      "fact": "تمتدّ شبه الجزيرة الإيطالية في وسط البحر المتوسط.",
+      "source": "europe/it.json",
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "pt",
+      "name": "البرتغال",
+      "capital": "لشبونة",
+      "aliases": [],
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "flag": "assets/flags/pt.png",
+      "fact": "يجري نهر تاجة غربًا عبر البرتغال.",
+      "source": "europe/po.json",
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "no",
+      "name": "النرويج",
+      "capital": "أوسلو",
+      "aliases": [],
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "flag": "assets/flags/no.png",
+      "fact": "تتخلّل ساحل النرويج خلجان عميقة وضيّقة تُسمّى الفيوردات.",
+      "source": "europe/no.json",
+      "region": "شمال أوروبا"
+    },
+    {
+      "id": "ca",
+      "name": "كندا",
+      "capital": "أوتاوا",
+      "aliases": [],
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "flag": "assets/flags/ca.png",
+      "fact": "لكندا سواحل على المحيطات الأطلسي والهادئ والمتجمّد الشمالي.",
+      "source": "north-america/ca.json",
+      "region": "شمال أمريكا الشمالية"
+    },
+    {
+      "id": "us",
+      "name": "الولايات المتحدة",
+      "capital": "واشنطن العاصمة",
+      "aliases": [
+        "الولايات المتحدة الأمريكية"
+      ],
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "flag": "assets/flags/us.png",
+      "fact": "تقع جزر هاواي البركانية ضمن الولايات المتحدة.",
+      "source": "north-america/us.json",
+      "region": "شمال أمريكا الشمالية"
+    },
+    {
+      "id": "mx",
+      "name": "المكسيك",
+      "capital": "مكسيكو سيتي",
+      "aliases": [
+        "الولايات المتحدة المكسيكية"
+      ],
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "flag": "assets/flags/mx.png",
+      "fact": "تضمّ المكسيك هضابًا عالية وسهولًا ساحلية منخفضة.",
+      "source": "north-america/mx.json",
+      "region": "أمريكا الوسطى"
+    },
+    {
+      "id": "cu",
+      "name": "كوبا",
+      "capital": "هافانا",
+      "aliases": [],
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "flag": "assets/flags/cu.png",
+      "fact": "تقع جزيرة كوبا في منطقة البحر الكاريبي.",
+      "source": "central-america-n-caribbean/cu.json",
+      "region": "الكاريبي"
+    },
+    {
+      "id": "cr",
+      "name": "كوستاريكا",
+      "capital": "سان خوسيه",
+      "aliases": [],
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "flag": "assets/flags/cr.png",
+      "fact": "تطلّ كوستاريكا على البحر الكاريبي والمحيط الهادئ.",
+      "source": "central-america-n-caribbean/cs.json",
+      "region": "أمريكا الوسطى"
+    },
+    {
+      "id": "br",
+      "name": "البرازيل",
+      "capital": "برازيليا",
+      "aliases": [],
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "flag": "assets/flags/br.png",
+      "fact": "تقع البرازيل في شرق أمريكا الجنوبية وتطلّ على المحيط الأطلسي.",
+      "source": "south-america/br.json",
+      "region": "أمريكا الجنوبية"
+    },
+    {
+      "id": "ar",
+      "name": "الأرجنتين",
+      "capital": "بوينس آيرس",
+      "aliases": [],
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "flag": "assets/flags/ar.png",
+      "fact": "تمتدّ هضبة باتاغونيا في جنوب الأرجنتين.",
+      "source": "south-america/ar.json",
+      "region": "أمريكا الجنوبية"
+    },
+    {
+      "id": "cl",
+      "name": "تشيلي",
+      "capital": "سانتياغو",
+      "aliases": [
+        "شيلي"
+      ],
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "flag": "assets/flags/cl.png",
+      "fact": "تمتدّ جبال الأنديز على الجانب الشرقي من تشيلي.",
+      "source": "south-america/ci.json",
+      "capitalNote": "سانتياغو هي العاصمة، ويقع مقرّ السلطة التشريعية في فالبارايسو.",
+      "region": "أمريكا الجنوبية"
+    },
+    {
+      "id": "pe",
+      "name": "بيرو",
+      "capital": "ليما",
+      "aliases": [],
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "flag": "assets/flags/pe.png",
+      "fact": "يضمّ شرق بيرو جزءًا من الأراضي المنخفضة في حوض الأمازون.",
+      "source": "south-america/pe.json",
+      "region": "أمريكا الجنوبية"
+    },
+    {
+      "id": "co",
+      "name": "كولومبيا",
+      "capital": "بوغوتا",
+      "aliases": [],
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "flag": "assets/flags/co.png",
+      "fact": "لكولومبيا سواحل على البحر الكاريبي والمحيط الهادئ.",
+      "source": "south-america/co.json",
+      "region": "أمريكا الجنوبية"
+    },
+    {
+      "id": "au",
+      "name": "أستراليا",
+      "capital": "كانبرا",
+      "aliases": [],
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "flag": "assets/flags/au.png",
+      "fact": "تقع أستراليا بين المحيط الهندي وجنوب المحيط الهادئ.",
+      "source": "australia-oceania/as.json",
+      "region": "أستراليا ونيوزيلندا"
+    },
+    {
+      "id": "nz",
+      "name": "نيوزيلندا",
+      "capital": "ويلينغتون",
+      "aliases": [],
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "flag": "assets/flags/nz.png",
+      "fact": "تقع جزر نيوزيلندا إلى الجنوب الشرقي من أستراليا.",
+      "source": "australia-oceania/nz.json",
+      "region": "أستراليا ونيوزيلندا"
+    },
+    {
+      "id": "fj",
+      "name": "فيجي",
+      "capital": "سوفا",
+      "aliases": [],
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "flag": "assets/flags/fj.png",
+      "fact": "تقع سوفا في جزيرة فيتي ليفو في جنوب المحيط الهادئ.",
+      "source": "australia-oceania/fj.json",
+      "region": "ميلانيزيا"
+    },
+    {
+      "id": "ws",
+      "name": "ساموا",
+      "capital": "أبيا",
+      "aliases": [],
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "flag": "assets/flags/ws.png",
+      "fact": "تتكوّن ساموا من جزيرتين رئيسيتين هما سافاي وأوبولو وعدد من الجزر الأصغر.",
+      "source": "australia-oceania/ws.json",
+      "region": "بولينيزيا"
+    },
+    {
+      "id": "to",
+      "name": "تونغا",
+      "capital": "نوكوالوفا",
+      "aliases": [],
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "flag": "assets/flags/to.png",
+      "fact": "تونغا أرخبيل في جنوب المحيط الهادئ.",
+      "source": "australia-oceania/tn.json",
+      "region": "بولينيزيا"
+    },
+    {
+      "id": "ad",
+      "name": "أندورا",
+      "capital": "أندورا لا فيلا",
+      "aliases": [],
+      "flag": "assets/flags/ad.png",
+      "fact": "تقع أندورا في جبال البرانس بين فرنسا وإسبانيا.",
+      "source": "europe/an.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "ae",
+      "name": "الإمارات العربية المتحدة",
+      "capital": "أبو ظبي",
+      "aliases": [
+        "الإمارات"
+      ],
+      "flag": "assets/flags/ae.png",
+      "fact": "تمتدّ الكثبان الرملية في داخل الإمارات، وترتفع الجبال في شرقها.",
+      "source": "middle-east/ae.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia",
+        "arab"
+      ],
+      "region": "غرب آسيا"
+    },
+    {
+      "id": "af",
+      "name": "أفغانستان",
+      "capital": "كابل",
+      "aliases": [],
+      "flag": "assets/flags/af.png",
+      "fact": "تغلب الجبال الوعرة على أفغانستان، وتمتد سهول في الشمال والجنوب الغربي.",
+      "source": "south-asia/af.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب آسيا"
+    },
+    {
+      "id": "ag",
+      "name": "أنتيغوا وباربودا",
+      "capital": "سانت جونز",
+      "aliases": [],
+      "flag": "assets/flags/ag.png",
+      "fact": "تضم أنتيغوا وباربودا جزرًا مرجانية منخفضة ومناطق بركانية أعلى.",
+      "source": "central-america-n-caribbean/ac.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "الكاريبي"
+    },
+    {
+      "id": "al",
+      "name": "ألبانيا",
+      "capital": "تيرانا",
+      "aliases": [],
+      "flag": "assets/flags/al.png",
+      "fact": "تطل ألبانيا على البحرين الأدرياتيكي والأيوني، وتغلب الجبال على داخلها.",
+      "source": "europe/al.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "am",
+      "name": "أرمينيا",
+      "capital": "يريفان",
+      "aliases": [],
+      "flag": "assets/flags/am.png",
+      "fact": "تقع أرمينيا على مرتفعات جبلية، وتجري أنهار سريعة في أوديتها.",
+      "source": "central-asia/am.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "غرب آسيا",
+      "mapQuiz": false
+    },
+    {
+      "id": "ao",
+      "name": "أنغولا",
+      "capital": "لواندا",
+      "aliases": [],
+      "flag": "assets/flags/ao.png",
+      "fact": "يرتفع السهل الساحلي الضيّق في أنغولا إلى هضبة واسعة في الداخل.",
+      "source": "africa/ao.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "وسط إفريقيا"
+    },
+    {
+      "id": "at",
+      "name": "النمسا",
+      "capital": "فيينا",
+      "aliases": [],
+      "flag": "assets/flags/at.png",
+      "fact": "تمتد جبال الألب في غرب النمسا وجنوبها، وتصبح الأراضي أكثر انبساطًا شرقًا.",
+      "source": "europe/au.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "غرب أوروبا"
+    },
+    {
+      "id": "az",
+      "name": "أذربيجان",
+      "capital": "باكو",
+      "aliases": [],
+      "flag": "assets/flags/az.png",
+      "fact": "تطل أذربيجان على بحر قزوين، وتقع جبال القوقاز الكبرى في شمالها.",
+      "source": "central-asia/aj.json",
+      "continents": [
+        "asia",
+        "europe"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "غرب آسيا",
+      "mapQuiz": false
+    },
+    {
+      "id": "ba",
+      "name": "البوسنة والهرسك",
+      "capital": "سراييفو",
+      "aliases": [],
+      "flag": "assets/flags/ba.png",
+      "fact": "تتخلّل الجبال والأودية معظم تضاريس البوسنة والهرسك.",
+      "source": "europe/bk.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "bb",
+      "name": "باربادوس",
+      "capital": "بريدج تاون",
+      "aliases": [],
+      "flag": "assets/flags/bb.png",
+      "fact": "ترتفع تضاريس باربادوس تدريجيًا باتجاه مرتفعات وسط الجزيرة.",
+      "source": "central-america-n-caribbean/bb.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "الكاريبي"
+    },
+    {
+      "id": "bd",
+      "name": "بنغلاديش",
+      "capital": "دكا",
+      "aliases": [],
+      "flag": "assets/flags/bd.png",
+      "fact": "تغطي السهول الرسوبية معظم بنغلاديش وتنحدر باتجاه خليج البنغال.",
+      "source": "south-asia/bg.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب آسيا"
+    },
+    {
+      "id": "be",
+      "name": "بلجيكا",
+      "capital": "بروكسل",
+      "aliases": [],
+      "flag": "assets/flags/be.png",
+      "fact": "تقع غابات ومرتفعات الأردين في جنوب شرق بلجيكا.",
+      "source": "europe/be.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "غرب أوروبا"
+    },
+    {
+      "id": "bf",
+      "name": "بوركينا فاسو",
+      "capital": "واغادوغو",
+      "aliases": [],
+      "flag": "assets/flags/bf.png",
+      "fact": "تغطي السافانا هضبة واسعة في بوركينا فاسو، وتنتشر التلال في غربها وجنوبها الشرقي.",
+      "source": "africa/uv.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "bg",
+      "name": "بلغاريا",
+      "capital": "صوفيا",
+      "aliases": [],
+      "flag": "assets/flags/bg.png",
+      "fact": "تطل بلغاريا على البحر الأسود، وتغلب الجبال على أجزاء واسعة منها.",
+      "source": "europe/bu.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شرق أوروبا"
+    },
+    {
+      "id": "bh",
+      "name": "البحرين",
+      "capital": "المنامة",
+      "aliases": [],
+      "flag": "assets/flags/bh.png",
+      "fact": "البحرين أرخبيل، وتسود سهول صحراوية منخفضة في جزيرتها الرئيسية.",
+      "source": "middle-east/ba.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia",
+        "arab"
+      ],
+      "region": "غرب آسيا"
+    },
+    {
+      "id": "bi",
+      "name": "بوروندي",
+      "capital": "غيتيغا",
+      "aliases": [],
+      "flag": "assets/flags/bi.png",
+      "fact": "تغلب الجبال والتلال على بوروندي، وتنخفض التضاريس إلى هضبة في الشرق.",
+      "source": "africa/by.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "bj",
+      "name": "بنين",
+      "capital": "بورتو نوفو",
+      "aliases": [],
+      "flag": "assets/flags/bj.png",
+      "fact": "يطل ساحل بنين على خليج بنين، وتغلب السهول على تضاريس البلاد.",
+      "source": "africa/bn.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "غرب إفريقيا",
+      "capitalNote": "بورتو نوفو العاصمة الرسمية، وتستضيف كوتونو مقر الحكومة.",
+      "capitalQuiz": false
+    },
+    {
+      "id": "bn",
+      "name": "بروناي",
+      "capital": "بندر سري بكاوان",
+      "aliases": [],
+      "flag": "assets/flags/bn.png",
+      "fact": "تقع بروناي على الساحل الشمالي لجزيرة بورنيو.",
+      "source": "east-n-southeast-asia/bx.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب شرق آسيا"
+    },
+    {
+      "id": "bo",
+      "name": "بوليفيا",
+      "capital": "سوكري",
+      "aliases": [],
+      "flag": "assets/flags/bo.png",
+      "fact": "تمتد هضبة ألتيبلانو العالية بين سلاسل جبال الأنديز في بوليفيا.",
+      "source": "south-america/bl.json",
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "region": "أمريكا الجنوبية",
+      "capitalNote": "سوكري العاصمة الدستورية، وتستضيف لاباز مقر الحكومة.",
+      "capitalQuiz": false
+    },
+    {
+      "id": "bs",
+      "name": "جزر البهاما",
+      "capital": "ناساو",
+      "aliases": [],
+      "flag": "assets/flags/bs.png",
+      "fact": "تتكوّن جزر البهاما في معظمها من تكوينات مرجانية مسطّحة.",
+      "source": "central-america-n-caribbean/bf.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "الكاريبي"
+    },
+    {
+      "id": "bt",
+      "name": "بوتان",
+      "capital": "تيمفو",
+      "aliases": [],
+      "flag": "assets/flags/bt.png",
+      "fact": "تضم بوتان جبالًا عالية تتخلّلها أودية خصبة.",
+      "source": "south-asia/bt.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب آسيا"
+    },
+    {
+      "id": "bw",
+      "name": "بوتسوانا",
+      "capital": "غابورون",
+      "aliases": [],
+      "flag": "assets/flags/bw.png",
+      "fact": "تقع صحراء كالاهاري في جنوب غرب بوتسوانا.",
+      "source": "africa/bc.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "جنوب إفريقيا"
+    },
+    {
+      "id": "by",
+      "name": "بيلاروسيا",
+      "capital": "مينسك",
+      "aliases": [],
+      "flag": "assets/flags/by.png",
+      "fact": "تغلب السهول على بيلاروسيا وتتخلّلها مناطق واسعة من المستنقعات.",
+      "source": "europe/bo.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شرق أوروبا"
+    },
+    {
+      "id": "bz",
+      "name": "بليز",
+      "capital": "بلموبان",
+      "aliases": [],
+      "flag": "assets/flags/bz.png",
+      "fact": "تطل بليز على البحر الكاريبي، وترتفع جبال منخفضة في جنوبها.",
+      "source": "central-america-n-caribbean/bh.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "أمريكا الوسطى"
+    },
+    {
+      "id": "cd",
+      "name": "جمهورية الكونغو الديمقراطية",
+      "capital": "كينشاسا",
+      "aliases": [],
+      "flag": "assets/flags/cd.png",
+      "fact": "يتوسط جمهورية الكونغو الديمقراطية حوض واسع منخفض، وتعلو الجبال في شرقها.",
+      "source": "africa/cg.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "وسط إفريقيا"
+    },
+    {
+      "id": "cf",
+      "name": "جمهورية إفريقيا الوسطى",
+      "capital": "بانغي",
+      "aliases": [],
+      "flag": "assets/flags/cf.png",
+      "fact": "تتكوّن معظم أراضي جمهورية إفريقيا الوسطى من هضبة تتخلّلها تلال متفرقة.",
+      "source": "africa/ct.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "وسط إفريقيا"
+    },
+    {
+      "id": "cg",
+      "name": "جمهورية الكونغو",
+      "capital": "برازافيل",
+      "aliases": [],
+      "flag": "assets/flags/cg.png",
+      "fact": "تمتدّ سهول ساحلية على الجزء المطلّ على المحيط الأطلسي من جمهورية الكونغو.",
+      "source": "africa/cf.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "وسط إفريقيا"
+    },
+    {
+      "id": "ch",
+      "name": "سويسرا",
+      "capital": "برن",
+      "aliases": [],
+      "flag": "assets/flags/ch.png",
+      "fact": "تقع جبال جورا في شمال غرب سويسرا والألب في الجنوب.",
+      "source": "europe/sz.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "غرب أوروبا",
+      "capitalNote": "برن المدينة الاتحادية ومقر الحكومة الاتحادية.",
+      "capitalQuiz": false
+    },
+    {
+      "id": "ci",
+      "name": "ساحل العاج",
+      "capital": "ياموسوكرو",
+      "aliases": [
+        "كوت ديفوار"
+      ],
+      "flag": "assets/flags/ci.png",
+      "fact": "تغلب السهول على ساحل العاج، وترتفع الجبال في الشمال الغربي.",
+      "source": "africa/iv.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "غرب إفريقيا",
+      "capitalNote": "ياموسوكرو العاصمة الرسمية، وتضم أبيدجان عددًا من الهيئات الحكومية.",
+      "capitalQuiz": false
+    },
+    {
+      "id": "cm",
+      "name": "الكاميرون",
+      "capital": "ياوندي",
+      "aliases": [],
+      "flag": "assets/flags/cm.png",
+      "fact": "تتنوع تضاريس الكاميرون بين جبال الغرب وسهول الشمال والهضبة الوسطى.",
+      "source": "africa/cm.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "وسط إفريقيا"
+    },
+    {
+      "id": "cv",
+      "name": "الرأس الأخضر",
+      "capital": "برايا",
+      "aliases": [
+        "كابو فيردي"
+      ],
+      "flag": "assets/flags/cv.png",
+      "fact": "الرأس الأخضر أرخبيل بركاني في المحيط الأطلسي غرب السنغال.",
+      "source": "africa/cv.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "cy",
+      "name": "قبرص",
+      "capital": "نيقوسيا",
+      "aliases": [],
+      "flag": "assets/flags/cy.png",
+      "fact": "تتوسط قبرص سهول تحيط بها الجبال من الشمال والجنوب.",
+      "source": "europe/cy.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "غرب آسيا",
+      "mapQuiz": false
+    },
+    {
+      "id": "cz",
+      "name": "التشيك",
+      "capital": "براغ",
+      "aliases": [
+        "تشيكيا"
+      ],
+      "flag": "assets/flags/cz.png",
+      "fact": "تقع بوهيميا في غرب التشيك، بينما تمتد تلال مورافيا في الشرق.",
+      "source": "europe/ez.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شرق أوروبا"
+    },
+    {
+      "id": "dj",
+      "name": "جيبوتي",
+      "capital": "جيبوتي",
+      "aliases": [],
+      "flag": "assets/flags/dj.png",
+      "fact": "تقع جيبوتي عند مدخل البحر الأحمر من جهة خليج عدن.",
+      "source": "africa/dj.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa",
+        "arab"
+      ],
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "dk",
+      "name": "الدنمارك",
+      "capital": "كوبنهاغن",
+      "aliases": [],
+      "flag": "assets/flags/dk.png",
+      "fact": "تقع الدنمارك في شبه جزيرة يوتلاند وعدد من الجزر المحيطة بها.",
+      "source": "europe/da.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شمال أوروبا"
+    },
+    {
+      "id": "dm",
+      "name": "دومينيكا",
+      "capital": "روسو",
+      "aliases": [],
+      "flag": "assets/flags/dm.png",
+      "fact": "تغلب الجبال البركانية الوعرة على جزيرة دومينيكا في البحر الكاريبي.",
+      "source": "central-america-n-caribbean/do.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "الكاريبي"
+    },
+    {
+      "id": "do",
+      "name": "جمهورية الدومينيكان",
+      "capital": "سانتو دومينغو",
+      "aliases": [],
+      "flag": "assets/flags/do.png",
+      "fact": "تشغل جمهورية الدومينيكان الجزء الشرقي من جزيرة هيسبانيولا.",
+      "source": "central-america-n-caribbean/dr.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "الكاريبي"
+    },
+    {
+      "id": "dz",
+      "name": "الجزائر",
+      "capital": "الجزائر",
+      "aliases": [],
+      "flag": "assets/flags/dz.png",
+      "fact": "تمتدّ جبال الأطلس في شمال الجزائر، وتقع جبال الهقار الصحراوية في جنوبها.",
+      "source": "africa/ag.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa",
+        "arab"
+      ],
+      "region": "شمال إفريقيا"
+    },
+    {
+      "id": "ec",
+      "name": "الإكوادور",
+      "capital": "كيتو",
+      "aliases": [],
+      "flag": "assets/flags/ec.png",
+      "fact": "يعبر خط الاستواء الإكوادور، وتمتد جبال الأنديز في وسطها.",
+      "source": "south-america/ec.json",
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "region": "أمريكا الجنوبية"
+    },
+    {
+      "id": "ee",
+      "name": "إستونيا",
+      "capital": "تالين",
+      "aliases": [],
+      "flag": "assets/flags/ee.png",
+      "fact": "تغلب السهول الرطبة على إستونيا، وتكثر التلال نحو الجنوب.",
+      "source": "europe/en.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شمال أوروبا"
+    },
+    {
+      "id": "er",
+      "name": "إريتريا",
+      "capital": "أسمرة",
+      "aliases": [],
+      "flag": "assets/flags/er.png",
+      "fact": "تنحدر مرتفعات إريتريا شرقًا إلى سهل صحراوي على البحر الأحمر.",
+      "source": "africa/er.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "es",
+      "name": "إسبانيا",
+      "capital": "مدريد",
+      "aliases": [],
+      "flag": "assets/flags/es.png",
+      "fact": "تتوسط إسبانيا هضبة واسعة وتطل على البحر المتوسط والمحيط الأطلسي.",
+      "source": "europe/sp.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "fi",
+      "name": "فنلندا",
+      "capital": "هلسنكي",
+      "aliases": [],
+      "flag": "assets/flags/fi.png",
+      "fact": "تتخلّل البحيرات والتلال المنخفضة سهول فنلندا.",
+      "source": "europe/fi.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شمال أوروبا"
+    },
+    {
+      "id": "fm",
+      "name": "ولايات ميكرونيسيا المتحدة",
+      "capital": "باليكير",
+      "aliases": [],
+      "flag": "assets/flags/fm.png",
+      "fact": "تضم ولايات ميكرونيسيا المتحدة جزرًا بركانية مرتفعة وأخرى مرجانية منخفضة.",
+      "source": "australia-oceania/fm.json",
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "region": "ميكرونيزيا"
+    },
+    {
+      "id": "ga",
+      "name": "الغابون",
+      "capital": "ليبرفيل",
+      "aliases": [],
+      "flag": "assets/flags/ga.png",
+      "fact": "يعبر خط الاستواء الغابون، التي تطل على المحيط الأطلسي.",
+      "source": "africa/gb.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "وسط إفريقيا"
+    },
+    {
+      "id": "gb",
+      "name": "المملكة المتحدة",
+      "capital": "لندن",
+      "aliases": [
+        "بريطانيا"
+      ],
+      "flag": "assets/flags/gb.png",
+      "fact": "تمتد المملكة المتحدة عبر جزيرة بريطانيا العظمى والجزء الشمالي الشرقي من أيرلندا.",
+      "source": "europe/uk.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شمال أوروبا"
+    },
+    {
+      "id": "gd",
+      "name": "غرينادا",
+      "capital": "سانت جورجز",
+      "aliases": [],
+      "flag": "assets/flags/gd.png",
+      "fact": "غرينادا جزيرة بركانية ترتفع الجبال في وسطها.",
+      "source": "central-america-n-caribbean/gj.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "الكاريبي"
+    },
+    {
+      "id": "ge",
+      "name": "جورجيا",
+      "capital": "تبليسي",
+      "aliases": [],
+      "flag": "assets/flags/ge.png",
+      "fact": "تفتح سهول كولخيدا في غرب جورجيا على البحر الأسود.",
+      "source": "central-asia/gg.json",
+      "continents": [
+        "asia",
+        "europe"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "غرب آسيا",
+      "mapQuiz": false
+    },
+    {
+      "id": "gm",
+      "name": "غامبيا",
+      "capital": "بانجول",
+      "aliases": [],
+      "flag": "assets/flags/gm.png",
+      "fact": "يمتد سهل فيضي على طول نهر غامبيا بين تلال منخفضة.",
+      "source": "africa/ga.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "gn",
+      "name": "غينيا",
+      "capital": "كوناكري",
+      "aliases": [],
+      "flag": "assets/flags/gn.png",
+      "fact": "ترتفع تضاريس غينيا من سهل ساحلي إلى تلال وجبال في الداخل.",
+      "source": "africa/gv.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "gq",
+      "name": "غينيا الاستوائية",
+      "capital": "سيوداد دي لا باز",
+      "aliases": [
+        "غينيا الإستوائية"
+      ],
+      "flag": "assets/flags/gq.png",
+      "fact": "تضم غينيا الاستوائية جزءًا قاريًا وجزرًا بركانية في خليج غينيا.",
+      "source": "africa/ek.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "وسط إفريقيا",
+      "capitalNote": "أُعلنت سيوداد دي لا باز العاصمة في يناير ٢٠٢٦، وكانت مالابو العاصمة السابقة."
+    },
+    {
+      "id": "gr",
+      "name": "اليونان",
+      "capital": "أثينا",
+      "aliases": [],
+      "flag": "assets/flags/gr.png",
+      "fact": "تمتدّ بعض سلاسل جبال اليونان في البحر على هيئة أشباه جزر وسلاسل جزر.",
+      "source": "europe/gr.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "gt",
+      "name": "غواتيمالا",
+      "capital": "غواتيمالا العاصمة",
+      "aliases": [],
+      "flag": "assets/flags/gt.png",
+      "fact": "تفصل سلسلتان جبليتان في غواتيمالا بين ساحل الهادئ وسهول بيتين الشمالية.",
+      "source": "central-america-n-caribbean/gt.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "أمريكا الوسطى"
+    },
+    {
+      "id": "gw",
+      "name": "غينيا بيساو",
+      "capital": "بيساو",
+      "aliases": [],
+      "flag": "assets/flags/gw.png",
+      "fact": "تقع جزر بيجاغوس قبالة ساحل غينيا بيساو على الأطلسي.",
+      "source": "africa/pu.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "gy",
+      "name": "غيانا",
+      "capital": "جورج تاون",
+      "aliases": [],
+      "flag": "assets/flags/gy.png",
+      "fact": "تتميز غيانا بسهل ساحلي منخفض وهضاب متموّجة وسافانا في الجنوب.",
+      "source": "south-america/gy.json",
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "region": "أمريكا الجنوبية",
+      "mapQuiz": false
+    },
+    {
+      "id": "hn",
+      "name": "هندوراس",
+      "capital": "تيغوسيغالبا",
+      "aliases": [],
+      "flag": "assets/flags/hn.png",
+      "fact": "تحيط السهول الساحلية الضيّقة بمرتفعات هندوراس التي تشغل معظم الداخل.",
+      "source": "central-america-n-caribbean/ho.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "أمريكا الوسطى"
+    },
+    {
+      "id": "hr",
+      "name": "كرواتيا",
+      "capital": "زغرب",
+      "aliases": [],
+      "flag": "assets/flags/hr.png",
+      "fact": "تطل كرواتيا على البحر الأدرياتيكي، وتنتشر الجزر قبالة ساحلها.",
+      "source": "europe/hr.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "ht",
+      "name": "هايتي",
+      "capital": "بورت أو برانس",
+      "aliases": [],
+      "flag": "assets/flags/ht.png",
+      "fact": "تقع هايتي في الجزء الغربي من جزيرة هيسبانيولا وتغلب الجبال على تضاريسها.",
+      "source": "central-america-n-caribbean/ha.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "الكاريبي"
+    },
+    {
+      "id": "hu",
+      "name": "المجر",
+      "capital": "بودابست",
+      "aliases": [],
+      "flag": "assets/flags/hu.png",
+      "fact": "تغلب السهول على المجر، وترتفع التلال قرب حدودها الشمالية.",
+      "source": "europe/hu.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شرق أوروبا"
+    },
+    {
+      "id": "id",
+      "name": "إندونيسيا",
+      "capital": "جاكرتا",
+      "aliases": [],
+      "flag": "assets/flags/id.png",
+      "fact": "تمتدّ جزر إندونيسيا بين المحيطين الهندي والهادئ، وترتفع الجبال داخل جزرها الكبرى.",
+      "source": "east-n-southeast-asia/id.json",
+      "continents": [
+        "asia",
+        "oceania"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب شرق آسيا",
+      "capitalNote": "جاكرتا مقر العاصمة الحالي في هذه النسخة، ومشروع انتقال العاصمة إلى نوسانتارا قيد التنفيذ.",
+      "capitalQuiz": false
+    },
+    {
+      "id": "ie",
+      "name": "أيرلندا",
+      "capital": "دبلن",
+      "aliases": [
+        "إيرلندا"
+      ],
+      "flag": "assets/flags/ie.png",
+      "fact": "تتوسط أيرلندا سهول تحيط بها تلال وجبال منخفضة، وتعلو جروف بحرية في الغرب.",
+      "source": "europe/ei.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شمال أوروبا"
+    },
+    {
+      "id": "il",
+      "name": "إسرائيل",
+      "capital": "القدس",
+      "aliases": [],
+      "flag": "assets/flags/il.png",
+      "fact": "يمتد سهل ساحلي شرقي البحر المتوسط، وتقع صحراء النقب جنوبًا.",
+      "source": "middle-east/is.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "غرب آسيا",
+      "capitalNote": "تعدّ إسرائيل القدس عاصمتها، ووضع المدينة محلّ نزاع دولي.",
+      "capitalQuiz": false,
+      "mapQuiz": false
+    },
+    {
+      "id": "iq",
+      "name": "العراق",
+      "capital": "بغداد",
+      "aliases": [],
+      "flag": "assets/flags/iq.png",
+      "fact": "تنتشر الأهوار والسهول المنخفضة في جنوب العراق.",
+      "source": "middle-east/iz.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia",
+        "arab"
+      ],
+      "region": "غرب آسيا"
+    },
+    {
+      "id": "ir",
+      "name": "إيران",
+      "capital": "طهران",
+      "aliases": [],
+      "flag": "assets/flags/ir.png",
+      "fact": "تحيط سلاسل جبلية بأحواض إيران الوسطى التي تتخلّلها الصحارى.",
+      "source": "middle-east/ir.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب آسيا"
+    },
+    {
+      "id": "is",
+      "name": "آيسلندا",
+      "capital": "ريكيافيك",
+      "aliases": [],
+      "flag": "assets/flags/is.png",
+      "fact": "تتخلّل القمم والحقول الجليدية هضبة آيسلندا، وتكثر الخلجان على سواحلها.",
+      "source": "europe/ic.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شمال أوروبا"
+    },
+    {
+      "id": "jm",
+      "name": "جامايكا",
+      "capital": "كينغستون",
+      "aliases": [],
+      "flag": "assets/flags/jm.png",
+      "fact": "تشغل الجبال معظم جزيرة جامايكا، وتحيط بها سهول ساحلية ضيّقة.",
+      "source": "central-america-n-caribbean/jm.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "الكاريبي"
+    },
+    {
+      "id": "kg",
+      "name": "قيرغيزستان",
+      "capital": "بيشكك",
+      "aliases": [],
+      "flag": "assets/flags/kg.png",
+      "fact": "تمتد جبال تيان شان وأوديتها على معظم أراضي قيرغيزستان.",
+      "source": "central-asia/kg.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "آسيا الوسطى"
+    },
+    {
+      "id": "kh",
+      "name": "كمبوديا",
+      "capital": "بنوم بنه",
+      "aliases": [],
+      "flag": "assets/flags/kh.png",
+      "fact": "تسود السهول المنخفضة في كمبوديا، وترتفع الجبال في الشمال والجنوب الغربي.",
+      "source": "east-n-southeast-asia/cb.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب شرق آسيا"
+    },
+    {
+      "id": "ki",
+      "name": "كيريباتي",
+      "capital": "جنوب تاراوا",
+      "aliases": [],
+      "flag": "assets/flags/ki.png",
+      "fact": "تتوزع جزر كيريباتي المرجانية على جانبي خط الاستواء في المحيط الهادئ.",
+      "source": "australia-oceania/kr.json",
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "region": "ميكرونيزيا",
+      "capitalNote": "جنوب تاراوا هو المركز الإداري ويضم مقار الحكومة."
+    },
+    {
+      "id": "km",
+      "name": "جزر القمر",
+      "capital": "موروني",
+      "aliases": [],
+      "flag": "assets/flags/km.png",
+      "fact": "تقع جزر القمر البركانية عند المدخل الشمالي لقناة موزمبيق.",
+      "source": "africa/cn.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa",
+        "arab"
+      ],
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "kn",
+      "name": "سانت كيتس ونيفيس",
+      "capital": "باستير",
+      "aliases": [],
+      "flag": "assets/flags/kn.png",
+      "fact": "تتكوّن سانت كيتس ونيفيس من جزيرتين بركانيتين لهما مرتفعات جبلية.",
+      "source": "central-america-n-caribbean/sc.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "الكاريبي"
+    },
+    {
+      "id": "kp",
+      "name": "كوريا الشمالية",
+      "capital": "بيونغيانغ",
+      "aliases": [],
+      "flag": "assets/flags/kp.png",
+      "fact": "تمتد الجبال والتلال التي تفصلها أودية ضيّقة في شمال شبه الجزيرة الكورية.",
+      "source": "east-n-southeast-asia/kn.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "شرق آسيا"
+    },
+    {
+      "id": "kw",
+      "name": "الكويت",
+      "capital": "مدينة الكويت",
+      "aliases": [],
+      "flag": "assets/flags/kw.png",
+      "fact": "تغلب السهول الصحراوية المنبسطة على الكويت.",
+      "source": "middle-east/ku.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia",
+        "arab"
+      ],
+      "region": "غرب آسيا"
+    },
+    {
+      "id": "kz",
+      "name": "كازاخستان",
+      "capital": "أستانا",
+      "aliases": [],
+      "flag": "assets/flags/kz.png",
+      "fact": "تمتد السهوب الواسعة في كازاخستان نحو جبال ألتاي شرقًا.",
+      "source": "central-asia/kz.json",
+      "continents": [
+        "asia",
+        "europe"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "آسيا الوسطى"
+    },
+    {
+      "id": "la",
+      "name": "لاوس",
+      "capital": "فيينتيان",
+      "aliases": [],
+      "flag": "assets/flags/la.png",
+      "fact": "تغطي الجبال الوعرة معظم لاوس، وتتخلّلها بعض السهول والهضاب.",
+      "source": "east-n-southeast-asia/la.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب شرق آسيا"
+    },
+    {
+      "id": "lb",
+      "name": "لبنان",
+      "capital": "بيروت",
+      "aliases": [],
+      "flag": "assets/flags/lb.png",
+      "fact": "يقع سهل البقاع بين سلسلتي جبال لبنان الغربية والشرقية.",
+      "source": "middle-east/le.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia",
+        "arab"
+      ],
+      "region": "غرب آسيا"
+    },
+    {
+      "id": "lc",
+      "name": "سانت لوسيا",
+      "capital": "كاستريس",
+      "aliases": [],
+      "flag": "assets/flags/lc.png",
+      "fact": "تتخلّل جبال جزيرة سانت لوسيا البركانية أودية واسعة وخصبة.",
+      "source": "central-america-n-caribbean/st.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "الكاريبي"
+    },
+    {
+      "id": "li",
+      "name": "ليختنشتاين",
+      "capital": "فادوتس",
+      "aliases": [],
+      "flag": "assets/flags/li.png",
+      "fact": "يمتدّ وادي الراين في غرب ليختنشتاين، وتغطي جبال الألب معظم أراضيها.",
+      "source": "europe/ls.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "غرب أوروبا"
+    },
+    {
+      "id": "lk",
+      "name": "سريلانكا",
+      "capital": "سري جاياواردنابورا كوتي",
+      "aliases": [],
+      "flag": "assets/flags/lk.png",
+      "fact": "تقع سريلانكا في المحيط الهندي جنوب الهند، وترتفع الجبال في وسطها الجنوبي.",
+      "source": "south-asia/ce.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب آسيا",
+      "capitalNote": "سري جاياواردنابورا كوتي مقر السلطة التشريعية، وتضم كولومبو مقار حكومية.",
+      "capitalQuiz": false
+    },
+    {
+      "id": "lr",
+      "name": "ليبيريا",
+      "capital": "مونروفيا",
+      "aliases": [],
+      "flag": "assets/flags/lr.png",
+      "fact": "ترتفع السهول الساحلية في ليبيريا نحو هضاب وجبال منخفضة في الداخل.",
+      "source": "africa/li.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "ls",
+      "name": "ليسوتو",
+      "capital": "ماسيرو",
+      "aliases": [],
+      "flag": "assets/flags/ls.png",
+      "fact": "تحيط جنوب إفريقيا بليسوتو من كل الجهات، وتغلب المرتفعات على تضاريسها.",
+      "source": "africa/lt.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "جنوب إفريقيا"
+    },
+    {
+      "id": "lt",
+      "name": "ليتوانيا",
+      "capital": "فيلنيوس",
+      "aliases": [],
+      "flag": "assets/flags/lt.png",
+      "fact": "تتناثر البحيرات الصغيرة في السهول المنخفضة من ليتوانيا.",
+      "source": "europe/lh.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شمال أوروبا"
+    },
+    {
+      "id": "lu",
+      "name": "لوكسمبورغ",
+      "capital": "مدينة لوكسمبورغ",
+      "aliases": [],
+      "flag": "assets/flags/lu.png",
+      "fact": "تنحدر مرتفعات لوكسمبورغ نحو سهل نهر موزيل في الجنوب الشرقي.",
+      "source": "europe/lu.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "غرب أوروبا"
+    },
+    {
+      "id": "lv",
+      "name": "لاتفيا",
+      "capital": "ريغا",
+      "aliases": [],
+      "flag": "assets/flags/lv.png",
+      "fact": "تغلب السهول المنخفضة على لاتفيا، التي تطل على بحر البلطيق.",
+      "source": "europe/lg.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شمال أوروبا"
+    },
+    {
+      "id": "ly",
+      "name": "ليبيا",
+      "capital": "طرابلس",
+      "aliases": [],
+      "flag": "assets/flags/ly.png",
+      "fact": "تقع ليبيا على البحر المتوسط، وتمتدّ في داخلها سهول وهضاب صحراوية.",
+      "source": "africa/ly.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa",
+        "arab"
+      ],
+      "region": "شمال إفريقيا"
+    },
+    {
+      "id": "mc",
+      "name": "موناكو",
+      "capital": "موناكو",
+      "aliases": [],
+      "flag": "assets/flags/mc.png",
+      "fact": "تقع موناكو على الساحل المتوسطي لجنوب فرنسا قرب إيطاليا.",
+      "source": "europe/mn.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "غرب أوروبا"
+    },
+    {
+      "id": "md",
+      "name": "مولدوفا",
+      "capital": "كيشيناو",
+      "aliases": [],
+      "flag": "assets/flags/md.png",
+      "fact": "تتكوّن معظم تضاريس مولدوفا من سهوب متموّجة.",
+      "source": "europe/md.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شرق أوروبا",
+      "mapQuiz": false
+    },
+    {
+      "id": "me",
+      "name": "الجبل الأسود",
+      "capital": "بودغوريتسا",
+      "aliases": [],
+      "flag": "assets/flags/me.png",
+      "fact": "تصعد تضاريس الجبل الأسود من سهل أدرياتيكي ضيّق إلى جبال جيرية وعرة.",
+      "source": "europe/mj.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "mg",
+      "name": "مدغشقر",
+      "capital": "أنتاناناريفو",
+      "aliases": [],
+      "flag": "assets/flags/mg.png",
+      "fact": "تقع مدغشقر في المحيط الهندي، وتمتدّ في وسطها هضبة مرتفعة وجبال.",
+      "source": "africa/ma.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "mh",
+      "name": "جزر مارشال",
+      "capital": "ماجورو",
+      "aliases": [],
+      "flag": "assets/flags/mh.png",
+      "fact": "تتألف جزر مارشال من جزر وأرخبيلات مرجانية منخفضة في شمال المحيط الهادئ.",
+      "source": "australia-oceania/rm.json",
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "region": "ميكرونيزيا"
+    },
+    {
+      "id": "mk",
+      "name": "مقدونيا الشمالية",
+      "capital": "سكوبيه",
+      "aliases": [
+        "مقدونيا"
+      ],
+      "flag": "assets/flags/mk.png",
+      "fact": "يعبر نهر فاردار مقدونيا الشمالية، وتنتشر الجبال والأحواض العميقة حوله.",
+      "source": "europe/mk.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "ml",
+      "name": "مالي",
+      "capital": "باماكو",
+      "aliases": [],
+      "flag": "assets/flags/ml.png",
+      "fact": "تغطي الرمال السهول الشمالية من مالي، بينما تنتشر السافانا في الجنوب.",
+      "source": "africa/ml.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "mm",
+      "name": "ميانمار",
+      "capital": "نايبيداو",
+      "aliases": [
+        "بورما"
+      ],
+      "flag": "assets/flags/mm.png",
+      "fact": "تحيط المرتفعات الوعرة بالأراضي المنخفضة في وسط ميانمار.",
+      "source": "east-n-southeast-asia/bm.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب شرق آسيا"
+    },
+    {
+      "id": "mn",
+      "name": "منغوليا",
+      "capital": "أولان باتور",
+      "aliases": [],
+      "flag": "assets/flags/mn.png",
+      "fact": "تمتد صحراء غوبي في جنوب منغوليا، وتتركز الجبال نحو الغرب.",
+      "source": "east-n-southeast-asia/mg.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "شرق آسيا"
+    },
+    {
+      "id": "mr",
+      "name": "موريتانيا",
+      "capital": "نواكشوط",
+      "aliases": [],
+      "flag": "assets/flags/mr.png",
+      "fact": "تغلب السهول الصحراوية على موريتانيا، ولها ساحل على المحيط الأطلسي.",
+      "source": "africa/mr.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa",
+        "arab"
+      ],
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "mt",
+      "name": "مالطا",
+      "capital": "فاليتا",
+      "aliases": [],
+      "flag": "assets/flags/mt.png",
+      "fact": "تقع جزر مالطا جنوب صقلية، وتنتشر الجروف على سواحلها الصخرية.",
+      "source": "europe/mt.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "mu",
+      "name": "موريشيوس",
+      "capital": "بورت لويس",
+      "aliases": [],
+      "flag": "assets/flags/mu.png",
+      "fact": "ترتفع جبال متفرقة حول هضبة موريشيوس الوسطى في المحيط الهندي.",
+      "source": "africa/mp.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "mv",
+      "name": "المالديف",
+      "capital": "ماليه",
+      "aliases": [],
+      "flag": "assets/flags/mv.png",
+      "fact": "تتكوّن المالديف من جزر مرجانية منخفضة في المحيط الهندي.",
+      "source": "south-asia/mv.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب آسيا"
+    },
+    {
+      "id": "mw",
+      "name": "مالاوي",
+      "capital": "ليلونغوي",
+      "aliases": [],
+      "flag": "assets/flags/mw.png",
+      "fact": "تمتد هضبة ضيّقة وطويلة عبر مالاوي وتتخلّلها تلال وجبال.",
+      "source": "africa/mi.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "my",
+      "name": "ماليزيا",
+      "capital": "كوالالمبور",
+      "aliases": [],
+      "flag": "assets/flags/my.png",
+      "fact": "تتوزع أراضي ماليزيا بين شبه جزيرة الملايو وشمال جزيرة بورنيو.",
+      "source": "east-n-southeast-asia/my.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب شرق آسيا",
+      "capitalNote": "كوالالمبور العاصمة، وتضم بوتراجايا مقرّ الإدارة الاتحادية.",
+      "capitalQuiz": false
+    },
+    {
+      "id": "mz",
+      "name": "موزمبيق",
+      "capital": "مابوتو",
+      "aliases": [],
+      "flag": "assets/flags/mz.png",
+      "fact": "تطل موزمبيق على قناة موزمبيق، وتمتد السهول على معظم ساحلها.",
+      "source": "africa/mz.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "na",
+      "name": "ناميبيا",
+      "capital": "ويندهوك",
+      "aliases": [],
+      "flag": "assets/flags/na.png",
+      "fact": "تمتد صحراء ناميب على ساحل ناميبيا، وتقع كالاهاري في شرق البلاد.",
+      "source": "africa/wa.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "جنوب إفريقيا"
+    },
+    {
+      "id": "ne",
+      "name": "النيجر",
+      "capital": "نيامي",
+      "aliases": [],
+      "flag": "assets/flags/ne.png",
+      "fact": "تغطي السهول الصحراوية والكثبان معظم النيجر، وتظهر تلال في شمال البلاد.",
+      "source": "africa/ng.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "ni",
+      "name": "نيكاراغوا",
+      "capital": "ماناغوا",
+      "aliases": [],
+      "flag": "assets/flags/ni.png",
+      "fact": "تنتشر البراكين على امتداد السهل الساحلي الضيّق للمحيط الهادئ في نيكاراغوا.",
+      "source": "central-america-n-caribbean/nu.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "أمريكا الوسطى"
+    },
+    {
+      "id": "nl",
+      "name": "هولندا",
+      "capital": "أمستردام",
+      "aliases": [],
+      "flag": "assets/flags/nl.png",
+      "fact": "تضم هولندا مساحات منخفضة استُصلحت من البحر والبحيرات وتُعرف بالبولدرات.",
+      "source": "europe/nl.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "غرب أوروبا",
+      "capitalNote": "أمستردام عاصمة البلاد، وتستضيف لاهاي الحكومة والبرلمان.",
+      "capitalQuiz": false
+    },
+    {
+      "id": "np",
+      "name": "نيبال",
+      "capital": "كاتماندو",
+      "aliases": [],
+      "flag": "assets/flags/np.png",
+      "fact": "ترتفع جبال الهيمالايا في شمال نيبال، وتمتد السهول النهرية في الجنوب.",
+      "source": "south-asia/np.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب آسيا"
+    },
+    {
+      "id": "nr",
+      "name": "ناورو",
+      "capital": "منطقة يارين",
+      "aliases": [],
+      "flag": "assets/flags/nr.png",
+      "fact": "ناورو جزيرة من الشعاب المرجانية المرتفعة، وفي وسطها هضبة.",
+      "source": "australia-oceania/nr.json",
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "region": "ميكرونيزيا",
+      "capitalNote": "ليس لناورو عاصمة رسمية. توجد مقارّ الحكومة في منطقة يارين.",
+      "capitalQuiz": false
+    },
+    {
+      "id": "om",
+      "name": "عُمان",
+      "capital": "مسقط",
+      "aliases": [],
+      "flag": "assets/flags/om.png",
+      "fact": "تمتدّ سهول عُمان الصحراوية بين جبال في شمال البلاد وجنوبها.",
+      "source": "middle-east/mu.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia",
+        "arab"
+      ],
+      "region": "غرب آسيا"
+    },
+    {
+      "id": "pa",
+      "name": "بنما",
+      "capital": "مدينة بنما",
+      "aliases": [],
+      "flag": "assets/flags/pa.png",
+      "fact": "تطلّ بنما على البحر الكاريبي شمالًا والمحيط الهادئ جنوبًا.",
+      "source": "central-america-n-caribbean/pm.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "أمريكا الوسطى"
+    },
+    {
+      "id": "pg",
+      "name": "بابوا غينيا الجديدة",
+      "capital": "بورت مورسبي",
+      "aliases": [],
+      "flag": "assets/flags/pg.png",
+      "fact": "تشغل بابوا غينيا الجديدة النصف الشرقي من جزيرة غينيا الجديدة ولها جزر أخرى.",
+      "source": "east-n-southeast-asia/pp.json",
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "region": "ميلانيزيا"
+    },
+    {
+      "id": "ph",
+      "name": "الفلبين",
+      "capital": "مانيلا",
+      "aliases": [],
+      "flag": "assets/flags/ph.png",
+      "fact": "تتكوّن الفلبين من أرخبيل في غرب المحيط الهادئ وتغلب الجبال على تضاريسها.",
+      "source": "east-n-southeast-asia/rp.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب شرق آسيا"
+    },
+    {
+      "id": "pk",
+      "name": "باكستان",
+      "capital": "إسلام آباد",
+      "aliases": [],
+      "flag": "assets/flags/pk.png",
+      "fact": "يتوسط سهل نهر السند باكستان بين المرتفعات الشمالية وهضبة بلوشستان.",
+      "source": "south-asia/pk.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب آسيا",
+      "mapQuiz": false
+    },
+    {
+      "id": "pl",
+      "name": "بولندا",
+      "capital": "وارسو",
+      "aliases": [],
+      "flag": "assets/flags/pl.png",
+      "fact": "تغطي السهول معظم بولندا، وترتفع الجبال على طول حدودها الجنوبية.",
+      "source": "europe/pl.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شرق أوروبا"
+    },
+    {
+      "id": "ps",
+      "name": "فلسطين",
+      "capital": "القدس الشرقية",
+      "aliases": [
+        "دولة فلسطين"
+      ],
+      "flag": "assets/flags/ps.png",
+      "fact": "تنحدر مرتفعات الضفة الغربية شرقًا نحو وادي الأردن.",
+      "source": "middle-east/we.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia",
+        "arab"
+      ],
+      "region": "غرب آسيا",
+      "capitalNote": "تعلن دولة فلسطين القدس الشرقية عاصمةً لها، وتوجد مقارّ الإدارة الفلسطينية في رام الله.",
+      "capitalQuiz": false,
+      "mapQuiz": false
+    },
+    {
+      "id": "pw",
+      "name": "بالاو",
+      "capital": "نغيرولمود",
+      "aliases": [],
+      "flag": "assets/flags/pw.png",
+      "fact": "تجمع بالاو بين جزر مرتفعة ذات تضاريس جبلية وجزر مرجانية منخفضة.",
+      "source": "australia-oceania/ps.json",
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "region": "ميكرونيزيا",
+      "capitalNote": "تقع نغيرولمود، مقرّ الحكومة، في ولاية ميليكيوك."
+    },
+    {
+      "id": "py",
+      "name": "باراغواي",
+      "capital": "أسونسيون",
+      "aliases": [],
+      "flag": "assets/flags/py.png",
+      "fact": "يفصل نهر باراغواي بين أراضي غران تشاكو غربًا والسهول والتلال شرقًا.",
+      "source": "south-america/pa.json",
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "region": "أمريكا الجنوبية"
+    },
+    {
+      "id": "qa",
+      "name": "قطر",
+      "capital": "الدوحة",
+      "aliases": [],
+      "flag": "assets/flags/qa.png",
+      "fact": "قطر شبه جزيرة يغلب على تضاريسها السهل الصحراوي المنبسط.",
+      "source": "middle-east/qa.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia",
+        "arab"
+      ],
+      "region": "غرب آسيا"
+    },
+    {
+      "id": "ro",
+      "name": "رومانيا",
+      "capital": "بوخارست",
+      "aliases": [],
+      "flag": "assets/flags/ro.png",
+      "fact": "يحيط جزء من جبال الكاربات بحوض ترانسيلفانيا في رومانيا.",
+      "source": "europe/ro.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شرق أوروبا"
+    },
+    {
+      "id": "rs",
+      "name": "صربيا",
+      "capital": "بلغراد",
+      "aliases": [],
+      "flag": "assets/flags/rs.png",
+      "fact": "تمتد سهول خصبة في شمال صربيا، وتزداد التضاريس الجبلية في الجنوب الشرقي.",
+      "source": "europe/ri.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "جنوب أوروبا",
+      "mapQuiz": false
+    },
+    {
+      "id": "ru",
+      "name": "روسيا",
+      "capital": "موسكو",
+      "aliases": [],
+      "flag": "assets/flags/ru.png",
+      "fact": "تمتد روسيا من شرق أوروبا عبر سيبيريا إلى ساحل المحيط الهادئ.",
+      "source": "central-asia/rs.json",
+      "continents": [
+        "europe",
+        "asia"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شرق أوروبا",
+      "mapQuiz": false
+    },
+    {
+      "id": "rw",
+      "name": "رواندا",
+      "capital": "كيغالي",
+      "aliases": [],
+      "flag": "assets/flags/rw.png",
+      "fact": "تنحدر مرتفعات رواندا من الجبال في الغرب إلى أراضٍ أقل ارتفاعًا في الشرق.",
+      "source": "africa/rw.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "sb",
+      "name": "جزر سليمان",
+      "capital": "هونيارا",
+      "aliases": [],
+      "flag": "assets/flags/sb.png",
+      "fact": "تغلب الجبال الوعرة على جزر سليمان، وتوجد فيها جزر مرجانية منخفضة.",
+      "source": "australia-oceania/bp.json",
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "region": "ميلانيزيا"
+    },
+    {
+      "id": "sc",
+      "name": "سيشل",
+      "capital": "فيكتوريا",
+      "aliases": [],
+      "flag": "assets/flags/sc.png",
+      "fact": "يضم أرخبيل سيشل جزرًا بركانية مثل ماهيه وأخرى مرجانية منخفضة.",
+      "source": "africa/se.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "sd",
+      "name": "السودان",
+      "capital": "الخرطوم",
+      "aliases": [],
+      "flag": "assets/flags/sd.png",
+      "fact": "تسود الصحراء في شمال السودان، وتمتدّ السهول المنبسطة في أنحاء واسعة منه.",
+      "source": "africa/su.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa",
+        "arab"
+      ],
+      "region": "شمال إفريقيا",
+      "mapQuiz": false
+    },
+    {
+      "id": "se",
+      "name": "السويد",
+      "capital": "ستوكهولم",
+      "aliases": [],
+      "flag": "assets/flags/se.png",
+      "fact": "تقع جبال السويد في الغرب قرب الحدود مع النرويج.",
+      "source": "europe/sw.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شمال أوروبا"
+    },
+    {
+      "id": "sg",
+      "name": "سنغافورة",
+      "capital": "سنغافورة",
+      "aliases": [],
+      "flag": "assets/flags/sg.png",
+      "fact": "تقع سنغافورة بين ماليزيا وإندونيسيا على جزيرة رئيسية وعدد من الجزر الأصغر.",
+      "source": "east-n-southeast-asia/sn.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب شرق آسيا"
+    },
+    {
+      "id": "si",
+      "name": "سلوفينيا",
+      "capital": "ليوبليانا",
+      "aliases": [],
+      "flag": "assets/flags/si.png",
+      "fact": "تمتدّ جبال الألب اليوليانية في شمال غرب سلوفينيا، وللبلاد ساحل قصير على الأدرياتيكي.",
+      "source": "europe/si.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "sk",
+      "name": "سلوفاكيا",
+      "capital": "براتيسلافا",
+      "aliases": [],
+      "flag": "assets/flags/sk.png",
+      "fact": "تغلب الجبال على شمال سلوفاكيا ووسطها وتظهر الأراضي المنخفضة جنوبًا.",
+      "source": "europe/lo.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شرق أوروبا"
+    },
+    {
+      "id": "sl",
+      "name": "سيراليون",
+      "capital": "فريتاون",
+      "aliases": [],
+      "flag": "assets/flags/sl.png",
+      "fact": "تنمو أشجار القرم في الأراضي الساحلية الرطبة من سيراليون.",
+      "source": "africa/sl.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "sm",
+      "name": "سان مارينو",
+      "capital": "مدينة سان مارينو",
+      "aliases": [],
+      "flag": "assets/flags/sm.png",
+      "fact": "تحيط إيطاليا بسان مارينو من جميع الجهات، وتغلب الجبال على تضاريسها.",
+      "source": "europe/sm.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "so",
+      "name": "الصومال",
+      "capital": "مقديشو",
+      "aliases": [],
+      "flag": "assets/flags/so.png",
+      "fact": "يطل الصومال على خليج عدن والمحيط الهندي، وترتفع التلال في شماله.",
+      "source": "africa/so.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa",
+        "arab"
+      ],
+      "region": "شرق إفريقيا",
+      "mapQuiz": false
+    },
+    {
+      "id": "sr",
+      "name": "سورينام",
+      "capital": "باراماريبو",
+      "aliases": [],
+      "flag": "assets/flags/sr.png",
+      "fact": "لسورينام سهل ساحلي ضيّق ورطب، وتغطي التلال معظم الداخل.",
+      "source": "south-america/ns.json",
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "region": "أمريكا الجنوبية"
+    },
+    {
+      "id": "ss",
+      "name": "جنوب السودان",
+      "capital": "جوبا",
+      "aliases": [],
+      "flag": "assets/flags/ss.png",
+      "fact": "يمرّ النيل الأبيض عبر جنوب السودان متجهًا نحو الشمال.",
+      "source": "africa/od.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "شرق إفريقيا",
+      "mapQuiz": false
+    },
+    {
+      "id": "st",
+      "name": "ساو تومي وبرينسيبي",
+      "capital": "ساو تومي",
+      "aliases": [],
+      "flag": "assets/flags/st.png",
+      "fact": "تقع جزر ساو تومي وبرينسيبي الجبلية البركانية في خليج غينيا.",
+      "source": "africa/tp.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "وسط إفريقيا"
+    },
+    {
+      "id": "sv",
+      "name": "السلفادور",
+      "capital": "سان سلفادور",
+      "aliases": [],
+      "flag": "assets/flags/sv.png",
+      "fact": "تطل السلفادور على المحيط الهادئ، وتتكوّن معظم تضاريسها من جبال وهضبة وسطى.",
+      "source": "central-america-n-caribbean/es.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "أمريكا الوسطى"
+    },
+    {
+      "id": "sy",
+      "name": "سوريا",
+      "capital": "دمشق",
+      "aliases": [],
+      "flag": "assets/flags/sy.png",
+      "fact": "تقع جبال في غرب سوريا بمحاذاة سهل ساحلي ضيّق على البحر المتوسط.",
+      "source": "middle-east/sy.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia",
+        "arab"
+      ],
+      "region": "غرب آسيا"
+    },
+    {
+      "id": "sz",
+      "name": "إسواتيني",
+      "capital": "مبابان",
+      "aliases": [
+        "سوازيلاند"
+      ],
+      "flag": "assets/flags/sz.png",
+      "fact": "تغلب الجبال والتلال على إسواتيني بين موزمبيق وجنوب إفريقيا.",
+      "source": "africa/wz.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "جنوب إفريقيا",
+      "capitalNote": "مبابان العاصمة الإدارية، ولوبامبا العاصمة الملكية والتشريعية.",
+      "capitalQuiz": false
+    },
+    {
+      "id": "td",
+      "name": "تشاد",
+      "capital": "نجامينا",
+      "aliases": [],
+      "flag": "assets/flags/td.png",
+      "fact": "تتحوّل سهول تشاد الجافة في الوسط إلى صحراء في الشمال وأراضٍ منخفضة في الجنوب.",
+      "source": "africa/cd.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "وسط إفريقيا"
+    },
+    {
+      "id": "tg",
+      "name": "توغو",
+      "capital": "لومي",
+      "aliases": [],
+      "flag": "assets/flags/tg.png",
+      "fact": "تتخلّل سهل توغو الساحلي بحيرات ضحلة وأراضٍ رطبة.",
+      "source": "africa/to.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "غرب إفريقيا"
+    },
+    {
+      "id": "tj",
+      "name": "طاجيكستان",
+      "capital": "دوشنبه",
+      "aliases": [],
+      "flag": "assets/flags/tj.png",
+      "fact": "تقع جبال بامير في جنوب شرق طاجيكستان.",
+      "source": "central-asia/ti.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "آسيا الوسطى"
+    },
+    {
+      "id": "tl",
+      "name": "تيمور الشرقية",
+      "capital": "ديلي",
+      "aliases": [
+        "تيمور-ليشتي"
+      ],
+      "flag": "assets/flags/tl.png",
+      "fact": "تغلب الجبال على تيمور الشرقية، التي تقع في الطرف الشرقي من جزر سوندا الصغرى.",
+      "source": "east-n-southeast-asia/tt.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب شرق آسيا"
+    },
+    {
+      "id": "tm",
+      "name": "تركمانستان",
+      "capital": "عشق آباد",
+      "aliases": [],
+      "flag": "assets/flags/tm.png",
+      "fact": "تمتد صحارى رملية في تركمانستان، التي تطل على بحر قزوين غربًا.",
+      "source": "central-asia/tx.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "آسيا الوسطى"
+    },
+    {
+      "id": "tr",
+      "name": "تركيا",
+      "capital": "أنقرة",
+      "aliases": [],
+      "flag": "assets/flags/tr.png",
+      "fact": "تمتدّ هضبة الأناضول في قلب تركيا، ويصل مضيق البوسفور بين البحر الأسود وبحر مرمرة.",
+      "source": "middle-east/tu.json",
+      "continents": [
+        "asia",
+        "europe"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "غرب آسيا"
+    },
+    {
+      "id": "tt",
+      "name": "ترينيداد وتوباغو",
+      "capital": "بورت أوف سبين",
+      "aliases": [],
+      "flag": "assets/flags/tt.png",
+      "fact": "تقع جزر ترينيداد وتوباغو شمال شرق فنزويلا.",
+      "source": "central-america-n-caribbean/td.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "الكاريبي"
+    },
+    {
+      "id": "tv",
+      "name": "توفالو",
+      "capital": "فونافوتي",
+      "aliases": [],
+      "flag": "assets/flags/tv.png",
+      "fact": "تتألّف توفالو من تسع جزر مرجانية منخفضة في المحيط الهادئ.",
+      "source": "australia-oceania/tv.json",
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "region": "بولينيزيا"
+    },
+    {
+      "id": "tz",
+      "name": "تنزانيا",
+      "capital": "دودوما",
+      "aliases": [],
+      "flag": "assets/flags/tz.png",
+      "fact": "ترتفع تنزانيا من السهول الساحلية إلى هضبة وسطى ومرتفعات في الشمال والجنوب.",
+      "source": "africa/tz.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "شرق إفريقيا",
+      "capitalNote": "دودوما العاصمة، ودار السلام أكبر مدن البلاد ومركزها التجاري."
+    },
+    {
+      "id": "ua",
+      "name": "أوكرانيا",
+      "capital": "كييف",
+      "aliases": [],
+      "flag": "assets/flags/ua.png",
+      "fact": "تغطي السهوب والهضاب مناطق واسعة من أوكرانيا، وتمتدّ جبال الكاربات في غربها.",
+      "source": "europe/up.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "شرق أوروبا",
+      "mapQuiz": false
+    },
+    {
+      "id": "ug",
+      "name": "أوغندا",
+      "capital": "كامبالا",
+      "aliases": [],
+      "flag": "assets/flags/ug.png",
+      "fact": "تقع معظم أوغندا على هضبة تحيط بها مرتفعات جبلية.",
+      "source": "africa/ug.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "uy",
+      "name": "الأوروغواي",
+      "capital": "مونتفيدو",
+      "aliases": [],
+      "flag": "assets/flags/uy.png",
+      "fact": "تكثر السهول المتموّجة والتلال المنخفضة في الأوروغواي.",
+      "source": "south-america/uy.json",
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "region": "أمريكا الجنوبية"
+    },
+    {
+      "id": "uz",
+      "name": "أوزبكستان",
+      "capital": "طشقند",
+      "aliases": [],
+      "flag": "assets/flags/uz.png",
+      "fact": "تتخلّل الصحارى الرملية في أوزبكستان أودية نهرية عريضة مثل وادي نهر سير داريا.",
+      "source": "central-asia/uz.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "آسيا الوسطى"
+    },
+    {
+      "id": "va",
+      "name": "الفاتيكان",
+      "capital": "مدينة الفاتيكان",
+      "aliases": [
+        "الكرسي الرسولي"
+      ],
+      "flag": "assets/flags/va.png",
+      "fact": "تقع دولة مدينة الفاتيكان داخل مدينة روما.",
+      "source": "europe/vt.json",
+      "continents": [
+        "europe"
+      ],
+      "chapters": [
+        "europe"
+      ],
+      "region": "جنوب أوروبا"
+    },
+    {
+      "id": "vc",
+      "name": "سانت فنسنت والغرينادين",
+      "capital": "كينغستاون",
+      "aliases": [],
+      "flag": "assets/flags/vc.png",
+      "fact": "تتميز جزر سانت فنسنت والغرينادين بتضاريسها الجبلية البركانية.",
+      "source": "central-america-n-caribbean/vc.json",
+      "continents": [
+        "north_america"
+      ],
+      "chapters": [
+        "north_america"
+      ],
+      "region": "الكاريبي"
+    },
+    {
+      "id": "ve",
+      "name": "فنزويلا",
+      "capital": "كاراكاس",
+      "aliases": [],
+      "flag": "assets/flags/ve.png",
+      "fact": "تمتد سهول يانوس في وسط فنزويلا بين الأنديز ومرتفعات غيانا.",
+      "source": "south-america/ve.json",
+      "continents": [
+        "south_america"
+      ],
+      "chapters": [
+        "south_america"
+      ],
+      "region": "أمريكا الجنوبية",
+      "mapQuiz": false
+    },
+    {
+      "id": "vn",
+      "name": "فيتنام",
+      "capital": "هانوي",
+      "aliases": [],
+      "flag": "assets/flags/vn.png",
+      "fact": "توجد دلتاوات منخفضة في شمال فيتنام وجنوبها، ومرتفعات في وسطها.",
+      "source": "east-n-southeast-asia/vm.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia"
+      ],
+      "region": "جنوب شرق آسيا"
+    },
+    {
+      "id": "vu",
+      "name": "فانواتو",
+      "capital": "بورت فيلا",
+      "aliases": [],
+      "flag": "assets/flags/vu.png",
+      "fact": "تغلب التضاريس الجبلية البركانية على فانواتو، ولها سهول ساحلية ضيّقة.",
+      "source": "australia-oceania/nh.json",
+      "continents": [
+        "oceania"
+      ],
+      "chapters": [
+        "oceania"
+      ],
+      "region": "ميلانيزيا"
+    },
+    {
+      "id": "ye",
+      "name": "اليمن",
+      "capital": "صنعاء",
+      "aliases": [],
+      "flag": "assets/flags/ye.png",
+      "fact": "تصعد تضاريس اليمن من سهول ساحلية ضيّقة إلى جبال وعرة وهضاب داخلية.",
+      "source": "middle-east/ym.json",
+      "continents": [
+        "asia"
+      ],
+      "chapters": [
+        "asia",
+        "arab"
+      ],
+      "region": "غرب آسيا",
+      "capitalNote": "صنعاء العاصمة الدستورية. تتخذ الحكومة المعترف بها دوليًا عدن مقرًا مؤقتًا.",
+      "capitalQuiz": false
+    },
+    {
+      "id": "za",
+      "name": "جنوب إفريقيا",
+      "capital": "بريتوريا",
+      "aliases": [],
+      "flag": "assets/flags/za.png",
+      "fact": "تشغل هضبة داخلية واسعة معظم جنوب إفريقيا وتنحدر نحو سهل ساحلي ضيّق.",
+      "source": "africa/sf.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "جنوب إفريقيا",
+      "capitalNote": "بريتوريا مقر الحكومة، وكيب تاون مقر البرلمان، وبلومفونتين مقر محكمة الاستئناف العليا.",
+      "capitalQuiz": false
+    },
+    {
+      "id": "zm",
+      "name": "زامبيا",
+      "capital": "لوساكا",
+      "aliases": [],
+      "flag": "assets/flags/zm.png",
+      "fact": "تغلب الهضاب العالية على زامبيا، وتتخلّلها تلال وقمم جبلية.",
+      "source": "africa/za.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "شرق إفريقيا"
+    },
+    {
+      "id": "zw",
+      "name": "زيمبابوي",
+      "capital": "هراري",
+      "aliases": [],
+      "flag": "assets/flags/zw.png",
+      "fact": "تمتد هضبة مرتفعة في وسط زيمبابوي، وتزداد الجبال قرب حدودها الشرقية.",
+      "source": "africa/zi.json",
+      "continents": [
+        "africa"
+      ],
+      "chapters": [
+        "africa"
+      ],
+      "region": "شرق إفريقيا"
+    }
+  ],
+  "missions": [
+    {
+      "id": "arab.flag",
+      "chapter": "arab",
+      "flag": [
+        "ma",
+        "eg",
+        "sa",
+        "jo",
+        "tn"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "arab.capital",
+      "chapter": "arab",
+      "capital": [
+        "ma",
+        "eg",
+        "sa",
+        "jo",
+        "tn"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "africa.flag",
+      "chapter": "africa",
+      "flag": [
+        "gh",
+        "ng",
+        "ke",
+        "et",
+        "sn"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "africa.capital",
+      "chapter": "africa",
+      "capital": [
+        "gh",
+        "ng",
+        "ke",
+        "et",
+        "sn"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "asia.flag",
+      "chapter": "asia",
+      "flag": [
+        "jp",
+        "cn",
+        "in",
+        "th",
+        "kr"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "asia.capital",
+      "chapter": "asia",
+      "capital": [
+        "jp",
+        "cn",
+        "in",
+        "th",
+        "kr"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "europe.flag",
+      "chapter": "europe",
+      "flag": [
+        "fr",
+        "de",
+        "it",
+        "pt",
+        "no"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "europe.capital",
+      "chapter": "europe",
+      "capital": [
+        "fr",
+        "de",
+        "it",
+        "pt",
+        "no"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "north_america.flag",
+      "chapter": "north_america",
+      "flag": [
+        "ca",
+        "us",
+        "mx",
+        "cu",
+        "cr"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "north_america.capital",
+      "chapter": "north_america",
+      "capital": [
+        "ca",
+        "us",
+        "mx",
+        "cu",
+        "cr"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "south_america.flag",
+      "chapter": "south_america",
+      "flag": [
+        "br",
+        "ar",
+        "cl",
+        "pe",
+        "co"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "south_america.capital",
+      "chapter": "south_america",
+      "capital": [
+        "br",
+        "ar",
+        "cl",
+        "pe",
+        "co"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "oceania.flag",
+      "chapter": "oceania",
+      "flag": [
+        "au",
+        "nz",
+        "fj",
+        "ws",
+        "to"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "oceania.capital",
+      "chapter": "oceania",
+      "capital": [
+        "au",
+        "nz",
+        "fj",
+        "ws",
+        "to"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "world.discovery",
+      "chapter": "world",
+      "flag": [
+        "ma",
+        "gh",
+        "jp",
+        "fr",
+        "ca"
+      ],
+      "capital": [
+        "eg",
+        "in",
+        "br",
+        "nz",
+        "ar"
+      ],
+      "legacy": true
+    },
+    {
+      "id": "africa.route01.flag",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "exploration",
+      "flag": [
+        "dz",
+        "eg",
+        "ly",
+        "ma",
+        "sd",
+        "tn",
+        "bf",
+        "bj"
+      ]
+    },
+    {
+      "id": "africa.route01.capital",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "exploration",
+      "capital": [
+        "dz",
+        "eg",
+        "ly",
+        "ma",
+        "sd",
+        "tn",
+        "bf",
+        "cv",
+        "gm"
+      ]
+    },
+    {
+      "id": "africa.route01.location",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "exploration",
+      "location": [
+        "dz",
+        "eg",
+        "ly",
+        "tn",
+        "bf",
+        "bj",
+        "ci",
+        "cv"
+      ]
+    },
+    {
+      "id": "africa.route01.outline",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "mastery",
+      "outline": [
+        "dz",
+        "eg",
+        "ly",
+        "tn",
+        "bf",
+        "bj",
+        "ci",
+        "cv"
+      ]
+    },
+    {
+      "id": "africa.route02.flag",
+      "chapter": "africa",
+      "title": "غرب إفريقيا",
+      "difficulty": "exploration",
+      "flag": [
+        "ci",
+        "cv",
+        "gm",
+        "gn",
+        "gw",
+        "lr",
+        "ml",
+        "mr"
+      ]
+    },
+    {
+      "id": "africa.route02.capital",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "exploration",
+      "capital": [
+        "gn",
+        "gw",
+        "lr",
+        "ml",
+        "mr",
+        "ne",
+        "sl",
+        "tg",
+        "ao"
+      ]
+    },
+    {
+      "id": "africa.route02.location",
+      "chapter": "africa",
+      "title": "غرب إفريقيا",
+      "difficulty": "exploration",
+      "location": [
+        "gh",
+        "gm",
+        "gn",
+        "gw",
+        "lr",
+        "ml",
+        "mr",
+        "ne"
+      ]
+    },
+    {
+      "id": "africa.route02.outline",
+      "chapter": "africa",
+      "title": "غرب إفريقيا",
+      "difficulty": "mastery",
+      "outline": [
+        "gh",
+        "gm",
+        "gn",
+        "gw",
+        "lr",
+        "ml",
+        "mr",
+        "ne"
+      ]
+    },
+    {
+      "id": "africa.route03.flag",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "exploration",
+      "flag": [
+        "ne",
+        "sl",
+        "tg",
+        "ao",
+        "cd",
+        "cf",
+        "cg",
+        "cm"
+      ]
+    },
+    {
+      "id": "africa.route03.capital",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "exploration",
+      "capital": [
+        "cd",
+        "cf",
+        "cg",
+        "cm",
+        "ga",
+        "gq",
+        "st",
+        "td",
+        "bi"
+      ]
+    },
+    {
+      "id": "africa.route03.location",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "exploration",
+      "location": [
+        "ng",
+        "sl",
+        "sn",
+        "tg",
+        "ao",
+        "cd",
+        "cf",
+        "cg",
+        "cm"
+      ]
+    },
+    {
+      "id": "africa.route03.outline",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "mastery",
+      "outline": [
+        "ng",
+        "sl",
+        "sn",
+        "tg",
+        "ao",
+        "cd",
+        "cf",
+        "cg",
+        "cm"
+      ]
+    },
+    {
+      "id": "africa.route04.flag",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "mastery",
+      "flag": [
+        "ga",
+        "gq",
+        "st",
+        "td",
+        "bi",
+        "dj",
+        "er",
+        "km"
+      ]
+    },
+    {
+      "id": "africa.route04.capital",
+      "chapter": "africa",
+      "title": "شرق إفريقيا",
+      "difficulty": "mastery",
+      "capital": [
+        "dj",
+        "er",
+        "km",
+        "mg",
+        "mu",
+        "mw",
+        "mz",
+        "rw",
+        "sc"
+      ]
+    },
+    {
+      "id": "africa.route04.location",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "mastery",
+      "location": [
+        "ga",
+        "gq",
+        "st",
+        "td",
+        "bi",
+        "dj",
+        "er",
+        "et"
+      ]
+    },
+    {
+      "id": "africa.route04.outline",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "mastery",
+      "outline": [
+        "ga",
+        "gq",
+        "st",
+        "td",
+        "bi",
+        "dj",
+        "er",
+        "et"
+      ]
+    },
+    {
+      "id": "africa.route05.flag",
+      "chapter": "africa",
+      "title": "شرق إفريقيا",
+      "difficulty": "mastery",
+      "flag": [
+        "mg",
+        "mu",
+        "mw",
+        "mz",
+        "rw",
+        "sc",
+        "so",
+        "ss"
+      ]
+    },
+    {
+      "id": "africa.route05.capital",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "mastery",
+      "capital": [
+        "so",
+        "ss",
+        "tz",
+        "ug",
+        "zm",
+        "zw",
+        "bw",
+        "ls",
+        "na"
+      ]
+    },
+    {
+      "id": "africa.route05.location",
+      "chapter": "africa",
+      "title": "شرق إفريقيا",
+      "difficulty": "mastery",
+      "location": [
+        "ke",
+        "km",
+        "mg",
+        "mu",
+        "mw",
+        "mz",
+        "rw",
+        "sc"
+      ]
+    },
+    {
+      "id": "africa.route05.outline",
+      "chapter": "africa",
+      "title": "شرق إفريقيا",
+      "difficulty": "mastery",
+      "outline": [
+        "ke",
+        "km",
+        "mg",
+        "mu",
+        "mw",
+        "mz",
+        "rw",
+        "sc"
+      ]
+    },
+    {
+      "id": "africa.route06.flag",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "mastery",
+      "flag": [
+        "tz",
+        "ug",
+        "zm",
+        "zw",
+        "bw",
+        "ls",
+        "na",
+        "sz",
+        "za"
+      ]
+    },
+    {
+      "id": "africa.route06.location",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "mastery",
+      "location": [
+        "tz",
+        "ug",
+        "zm",
+        "zw",
+        "bw",
+        "ls",
+        "na",
+        "sz",
+        "za"
+      ]
+    },
+    {
+      "id": "africa.route06.outline",
+      "chapter": "africa",
+      "title": "إفريقيا",
+      "difficulty": "mastery",
+      "outline": [
+        "tz",
+        "ug",
+        "zm",
+        "zw",
+        "bw",
+        "ls",
+        "na",
+        "sz",
+        "za"
+      ]
+    },
+    {
+      "id": "asia.route01.flag",
+      "chapter": "asia",
+      "title": "غرب آسيا",
+      "difficulty": "exploration",
+      "flag": [
+        "ae",
+        "am",
+        "az",
+        "bh",
+        "cy",
+        "ge",
+        "il",
+        "iq"
+      ]
+    },
+    {
+      "id": "asia.route01.capital",
+      "chapter": "asia",
+      "title": "غرب آسيا",
+      "difficulty": "exploration",
+      "capital": [
+        "ae",
+        "am",
+        "az",
+        "bh",
+        "cy",
+        "ge",
+        "iq"
+      ]
+    },
+    {
+      "id": "asia.route01.location",
+      "chapter": "asia",
+      "title": "غرب آسيا",
+      "difficulty": "exploration",
+      "location": [
+        "ae",
+        "bh",
+        "iq",
+        "jo",
+        "kw",
+        "lb",
+        "om"
+      ]
+    },
+    {
+      "id": "asia.route01.outline",
+      "chapter": "asia",
+      "title": "غرب آسيا",
+      "difficulty": "mastery",
+      "outline": [
+        "ae",
+        "bh",
+        "iq",
+        "jo",
+        "kw",
+        "lb",
+        "om"
+      ]
+    },
+    {
+      "id": "asia.route02.flag",
+      "chapter": "asia",
+      "title": "غرب آسيا",
+      "difficulty": "exploration",
+      "flag": [
+        "jo",
+        "kw",
+        "lb",
+        "om",
+        "ps",
+        "qa",
+        "sa",
+        "sy",
+        "tr"
+      ]
+    },
+    {
+      "id": "asia.route02.capital",
+      "chapter": "asia",
+      "title": "غرب آسيا",
+      "difficulty": "exploration",
+      "capital": [
+        "jo",
+        "kw",
+        "lb",
+        "om",
+        "qa",
+        "sa",
+        "sy"
+      ]
+    },
+    {
+      "id": "asia.route02.location",
+      "chapter": "asia",
+      "title": "آسيا",
+      "difficulty": "exploration",
+      "location": [
+        "qa",
+        "sa",
+        "sy",
+        "tr",
+        "ye",
+        "kg",
+        "kz",
+        "tj"
+      ]
+    },
+    {
+      "id": "asia.route02.outline",
+      "chapter": "asia",
+      "title": "آسيا",
+      "difficulty": "mastery",
+      "outline": [
+        "qa",
+        "sa",
+        "sy",
+        "tr",
+        "ye",
+        "kg",
+        "kz",
+        "tj"
+      ]
+    },
+    {
+      "id": "asia.route03.flag",
+      "chapter": "asia",
+      "title": "آسيا",
+      "difficulty": "exploration",
+      "flag": [
+        "ye",
+        "kg",
+        "kz",
+        "tj",
+        "tm",
+        "uz",
+        "af",
+        "bd"
+      ]
+    },
+    {
+      "id": "asia.route03.capital",
+      "chapter": "asia",
+      "title": "آسيا",
+      "difficulty": "exploration",
+      "capital": [
+        "tr",
+        "kg",
+        "kz",
+        "tj",
+        "tm",
+        "uz",
+        "af",
+        "bd"
+      ]
+    },
+    {
+      "id": "asia.route03.location",
+      "chapter": "asia",
+      "title": "آسيا",
+      "difficulty": "exploration",
+      "location": [
+        "tm",
+        "uz",
+        "af",
+        "bd",
+        "bt",
+        "ir",
+        "lk",
+        "mv"
+      ]
+    },
+    {
+      "id": "asia.route03.outline",
+      "chapter": "asia",
+      "title": "آسيا",
+      "difficulty": "mastery",
+      "outline": [
+        "tm",
+        "uz",
+        "af",
+        "bd",
+        "bt",
+        "ir",
+        "lk",
+        "mv"
+      ]
+    },
+    {
+      "id": "asia.route04.flag",
+      "chapter": "asia",
+      "title": "آسيا",
+      "difficulty": "mastery",
+      "flag": [
+        "bt",
+        "ir",
+        "lk",
+        "mv",
+        "np",
+        "pk",
+        "kp",
+        "mn",
+        "bn"
+      ]
+    },
+    {
+      "id": "asia.route04.capital",
+      "chapter": "asia",
+      "title": "آسيا",
+      "difficulty": "mastery",
+      "capital": [
+        "bt",
+        "ir",
+        "mv",
+        "np",
+        "pk",
+        "kp",
+        "mn"
+      ]
+    },
+    {
+      "id": "asia.route04.location",
+      "chapter": "asia",
+      "title": "آسيا",
+      "difficulty": "mastery",
+      "location": [
+        "np",
+        "jp",
+        "kp",
+        "kr",
+        "mn",
+        "bn",
+        "id",
+        "kh"
+      ]
+    },
+    {
+      "id": "asia.route04.outline",
+      "chapter": "asia",
+      "title": "آسيا",
+      "difficulty": "mastery",
+      "outline": [
+        "np",
+        "jp",
+        "kp",
+        "kr",
+        "mn",
+        "bn",
+        "id",
+        "kh"
+      ]
+    },
+    {
+      "id": "asia.route05.flag",
+      "chapter": "asia",
+      "title": "جنوب شرق آسيا",
+      "difficulty": "mastery",
+      "flag": [
+        "id",
+        "kh",
+        "la",
+        "mm",
+        "my",
+        "ph",
+        "sg",
+        "tl",
+        "vn"
+      ]
+    },
+    {
+      "id": "asia.route05.capital",
+      "chapter": "asia",
+      "title": "جنوب شرق آسيا",
+      "difficulty": "mastery",
+      "capital": [
+        "bn",
+        "kh",
+        "la",
+        "mm",
+        "ph",
+        "sg",
+        "tl",
+        "vn"
+      ]
+    },
+    {
+      "id": "asia.route05.location",
+      "chapter": "asia",
+      "title": "جنوب شرق آسيا",
+      "difficulty": "mastery",
+      "location": [
+        "la",
+        "mm",
+        "my",
+        "ph",
+        "sg",
+        "th",
+        "tl",
+        "vn"
+      ]
+    },
+    {
+      "id": "asia.route05.outline",
+      "chapter": "asia",
+      "title": "جنوب شرق آسيا",
+      "difficulty": "mastery",
+      "outline": [
+        "la",
+        "mm",
+        "my",
+        "ph",
+        "sg",
+        "th",
+        "tl",
+        "vn"
+      ]
+    },
+    {
+      "id": "europe.route01.flag",
+      "chapter": "europe",
+      "title": "غرب أوروبا",
+      "difficulty": "exploration",
+      "flag": [
+        "at",
+        "be",
+        "ch",
+        "li",
+        "lu",
+        "mc",
+        "nl"
+      ]
+    },
+    {
+      "id": "europe.route01.capital",
+      "chapter": "europe",
+      "title": "أوروبا",
+      "difficulty": "exploration",
+      "capital": [
+        "at",
+        "be",
+        "li",
+        "lu",
+        "mc",
+        "dk",
+        "ee"
+      ]
+    },
+    {
+      "id": "europe.route01.location",
+      "chapter": "europe",
+      "title": "غرب أوروبا",
+      "difficulty": "exploration",
+      "location": [
+        "at",
+        "be",
+        "ch",
+        "de",
+        "fr",
+        "li",
+        "lu",
+        "mc"
+      ]
+    },
+    {
+      "id": "europe.route01.outline",
+      "chapter": "europe",
+      "title": "غرب أوروبا",
+      "difficulty": "mastery",
+      "outline": [
+        "at",
+        "be",
+        "ch",
+        "de",
+        "fr",
+        "li",
+        "lu",
+        "mc"
+      ]
+    },
+    {
+      "id": "europe.route02.flag",
+      "chapter": "europe",
+      "title": "شمال أوروبا",
+      "difficulty": "exploration",
+      "flag": [
+        "dk",
+        "ee",
+        "fi",
+        "gb",
+        "ie",
+        "is",
+        "lt",
+        "lv"
+      ]
+    },
+    {
+      "id": "europe.route02.capital",
+      "chapter": "europe",
+      "title": "شمال أوروبا",
+      "difficulty": "exploration",
+      "capital": [
+        "fi",
+        "gb",
+        "ie",
+        "is",
+        "lt",
+        "lv",
+        "se"
+      ]
+    },
+    {
+      "id": "europe.route02.location",
+      "chapter": "europe",
+      "title": "أوروبا",
+      "difficulty": "exploration",
+      "location": [
+        "nl",
+        "dk",
+        "ee",
+        "fi",
+        "gb",
+        "ie",
+        "is",
+        "lt"
+      ]
+    },
+    {
+      "id": "europe.route02.outline",
+      "chapter": "europe",
+      "title": "أوروبا",
+      "difficulty": "mastery",
+      "outline": [
+        "nl",
+        "dk",
+        "ee",
+        "fi",
+        "gb",
+        "ie",
+        "is",
+        "lt"
+      ]
+    },
+    {
+      "id": "europe.route03.flag",
+      "chapter": "europe",
+      "title": "أوروبا",
+      "difficulty": "exploration",
+      "flag": [
+        "se",
+        "ad",
+        "al",
+        "ba",
+        "es",
+        "gr",
+        "hr",
+        "me"
+      ]
+    },
+    {
+      "id": "europe.route03.capital",
+      "chapter": "europe",
+      "title": "جنوب أوروبا",
+      "difficulty": "exploration",
+      "capital": [
+        "ad",
+        "al",
+        "ba",
+        "es",
+        "gr",
+        "hr",
+        "me",
+        "mk"
+      ]
+    },
+    {
+      "id": "europe.route03.location",
+      "chapter": "europe",
+      "title": "أوروبا",
+      "difficulty": "exploration",
+      "location": [
+        "lv",
+        "no",
+        "se",
+        "ad",
+        "al",
+        "ba",
+        "es",
+        "gr"
+      ]
+    },
+    {
+      "id": "europe.route03.outline",
+      "chapter": "europe",
+      "title": "أوروبا",
+      "difficulty": "mastery",
+      "outline": [
+        "lv",
+        "no",
+        "se",
+        "ad",
+        "al",
+        "ba",
+        "es",
+        "gr"
+      ]
+    },
+    {
+      "id": "europe.route04.flag",
+      "chapter": "europe",
+      "title": "أوروبا",
+      "difficulty": "mastery",
+      "flag": [
+        "mk",
+        "mt",
+        "rs",
+        "si",
+        "sm",
+        "va",
+        "bg",
+        "by"
+      ]
+    },
+    {
+      "id": "europe.route04.capital",
+      "chapter": "europe",
+      "title": "أوروبا",
+      "difficulty": "mastery",
+      "capital": [
+        "mt",
+        "rs",
+        "si",
+        "sm",
+        "va",
+        "bg",
+        "by"
+      ]
+    },
+    {
+      "id": "europe.route04.location",
+      "chapter": "europe",
+      "title": "جنوب أوروبا",
+      "difficulty": "mastery",
+      "location": [
+        "hr",
+        "it",
+        "me",
+        "mk",
+        "mt",
+        "pt",
+        "si",
+        "sm"
+      ]
+    },
+    {
+      "id": "europe.route04.outline",
+      "chapter": "europe",
+      "title": "جنوب أوروبا",
+      "difficulty": "mastery",
+      "outline": [
+        "hr",
+        "it",
+        "me",
+        "mk",
+        "mt",
+        "pt",
+        "si",
+        "sm"
+      ]
+    },
+    {
+      "id": "europe.route05.flag",
+      "chapter": "europe",
+      "title": "شرق أوروبا",
+      "difficulty": "mastery",
+      "flag": [
+        "cz",
+        "hu",
+        "md",
+        "pl",
+        "ro",
+        "ru",
+        "sk",
+        "ua"
+      ]
+    },
+    {
+      "id": "europe.route05.capital",
+      "chapter": "europe",
+      "title": "شرق أوروبا",
+      "difficulty": "mastery",
+      "capital": [
+        "cz",
+        "hu",
+        "md",
+        "pl",
+        "ro",
+        "ru",
+        "sk",
+        "ua"
+      ]
+    },
+    {
+      "id": "europe.route05.location",
+      "chapter": "europe",
+      "title": "أوروبا",
+      "difficulty": "mastery",
+      "location": [
+        "va",
+        "bg",
+        "by",
+        "cz",
+        "hu",
+        "pl",
+        "ro",
+        "sk"
+      ]
+    },
+    {
+      "id": "europe.route05.outline",
+      "chapter": "europe",
+      "title": "أوروبا",
+      "difficulty": "mastery",
+      "outline": [
+        "va",
+        "bg",
+        "by",
+        "cz",
+        "hu",
+        "pl",
+        "ro",
+        "sk"
+      ]
+    },
+    {
+      "id": "north_america.route01.flag",
+      "chapter": "north_america",
+      "title": "أمريكا الشمالية",
+      "difficulty": "exploration",
+      "flag": [
+        "bz",
+        "gt",
+        "hn",
+        "ni",
+        "pa",
+        "sv",
+        "ag",
+        "bb",
+        "bs"
+      ]
+    },
+    {
+      "id": "north_america.route01.capital",
+      "chapter": "north_america",
+      "title": "أمريكا الشمالية",
+      "difficulty": "exploration",
+      "capital": [
+        "bz",
+        "gt",
+        "hn",
+        "ni",
+        "pa",
+        "sv",
+        "ag",
+        "bb",
+        "bs"
+      ]
+    },
+    {
+      "id": "north_america.route01.location",
+      "chapter": "north_america",
+      "title": "أمريكا الشمالية",
+      "difficulty": "exploration",
+      "location": [
+        "ca",
+        "us",
+        "bz",
+        "cr",
+        "gt",
+        "hn",
+        "mx"
+      ]
+    },
+    {
+      "id": "north_america.route01.outline",
+      "chapter": "north_america",
+      "title": "أمريكا الشمالية",
+      "difficulty": "mastery",
+      "outline": [
+        "ca",
+        "us",
+        "bz",
+        "cr",
+        "gt",
+        "hn",
+        "mx"
+      ]
+    },
+    {
+      "id": "north_america.route02.flag",
+      "chapter": "north_america",
+      "title": "الكاريبي",
+      "difficulty": "exploration",
+      "flag": [
+        "dm",
+        "do",
+        "gd",
+        "ht",
+        "jm",
+        "kn",
+        "lc",
+        "tt",
+        "vc"
+      ]
+    },
+    {
+      "id": "north_america.route02.capital",
+      "chapter": "north_america",
+      "title": "الكاريبي",
+      "difficulty": "exploration",
+      "capital": [
+        "dm",
+        "do",
+        "gd",
+        "ht",
+        "jm",
+        "kn",
+        "lc",
+        "tt",
+        "vc"
+      ]
+    },
+    {
+      "id": "north_america.route02.location",
+      "chapter": "north_america",
+      "title": "أمريكا الشمالية",
+      "difficulty": "exploration",
+      "location": [
+        "ni",
+        "pa",
+        "sv",
+        "ag",
+        "bb",
+        "bs",
+        "cu",
+        "dm"
+      ]
+    },
+    {
+      "id": "north_america.route02.outline",
+      "chapter": "north_america",
+      "title": "أمريكا الشمالية",
+      "difficulty": "mastery",
+      "outline": [
+        "ni",
+        "pa",
+        "sv",
+        "ag",
+        "bb",
+        "bs",
+        "cu",
+        "dm"
+      ]
+    },
+    {
+      "id": "north_america.route03.location",
+      "chapter": "north_america",
+      "title": "الكاريبي",
+      "difficulty": "exploration",
+      "location": [
+        "do",
+        "gd",
+        "ht",
+        "jm",
+        "kn",
+        "lc",
+        "tt",
+        "vc"
+      ]
+    },
+    {
+      "id": "north_america.route03.outline",
+      "chapter": "north_america",
+      "title": "الكاريبي",
+      "difficulty": "mastery",
+      "outline": [
+        "do",
+        "gd",
+        "ht",
+        "jm",
+        "kn",
+        "lc",
+        "tt",
+        "vc"
+      ]
+    },
+    {
+      "id": "south_america.route01.flag",
+      "chapter": "south_america",
+      "title": "أمريكا الجنوبية",
+      "difficulty": "exploration",
+      "flag": [
+        "bo",
+        "ec",
+        "gy",
+        "py",
+        "sr",
+        "uy",
+        "ve"
+      ]
+    },
+    {
+      "id": "south_america.route01.capital",
+      "chapter": "south_america",
+      "title": "أمريكا الجنوبية",
+      "difficulty": "exploration",
+      "capital": [
+        "ec",
+        "gy",
+        "py",
+        "sr",
+        "uy",
+        "ve"
+      ]
+    },
+    {
+      "id": "south_america.route01.location",
+      "chapter": "south_america",
+      "title": "أمريكا الجنوبية",
+      "difficulty": "exploration",
+      "location": [
+        "ar",
+        "bo",
+        "br",
+        "cl",
+        "co"
+      ]
+    },
+    {
+      "id": "south_america.route01.outline",
+      "chapter": "south_america",
+      "title": "أمريكا الجنوبية",
+      "difficulty": "mastery",
+      "outline": [
+        "ar",
+        "bo",
+        "br",
+        "cl",
+        "co"
+      ]
+    },
+    {
+      "id": "south_america.route02.location",
+      "chapter": "south_america",
+      "title": "أمريكا الجنوبية",
+      "difficulty": "exploration",
+      "location": [
+        "ec",
+        "pe",
+        "py",
+        "sr",
+        "uy"
+      ]
+    },
+    {
+      "id": "south_america.route02.outline",
+      "chapter": "south_america",
+      "title": "أمريكا الجنوبية",
+      "difficulty": "mastery",
+      "outline": [
+        "ec",
+        "pe",
+        "py",
+        "sr",
+        "uy"
+      ]
+    },
+    {
+      "id": "oceania.route01.flag",
+      "chapter": "oceania",
+      "title": "أوقيانوسيا",
+      "difficulty": "exploration",
+      "flag": [
+        "pg",
+        "sb",
+        "vu",
+        "tv",
+        "fm",
+        "ki",
+        "mh",
+        "nr",
+        "pw"
+      ]
+    },
+    {
+      "id": "oceania.route01.capital",
+      "chapter": "oceania",
+      "title": "أوقيانوسيا",
+      "difficulty": "exploration",
+      "capital": [
+        "pg",
+        "sb",
+        "vu",
+        "tv",
+        "fm",
+        "ki",
+        "mh",
+        "pw"
+      ]
+    },
+    {
+      "id": "oceania.route01.location",
+      "chapter": "oceania",
+      "title": "أوقيانوسيا",
+      "difficulty": "exploration",
+      "location": [
+        "au",
+        "nz",
+        "fj",
+        "pg",
+        "sb",
+        "vu",
+        "to"
+      ]
+    },
+    {
+      "id": "oceania.route01.outline",
+      "chapter": "oceania",
+      "title": "أوقيانوسيا",
+      "difficulty": "mastery",
+      "outline": [
+        "au",
+        "nz",
+        "fj",
+        "pg",
+        "sb",
+        "vu",
+        "to"
+      ]
+    },
+    {
+      "id": "oceania.route02.location",
+      "chapter": "oceania",
+      "title": "أوقيانوسيا",
+      "difficulty": "exploration",
+      "location": [
+        "tv",
+        "ws",
+        "fm",
+        "ki",
+        "mh",
+        "nr",
+        "pw"
+      ]
+    },
+    {
+      "id": "oceania.route02.outline",
+      "chapter": "oceania",
+      "title": "أوقيانوسيا",
+      "difficulty": "mastery",
+      "outline": [
+        "tv",
+        "ws",
+        "fm",
+        "ki",
+        "mh",
+        "nr",
+        "pw"
+      ]
+    },
+    {
+      "id": "arab.route01.flag",
+      "chapter": "arab",
+      "title": "العالم العربي",
+      "difficulty": "exploration",
+      "flag": [
+        "dz",
+        "ly",
+        "sd",
+        "dj",
+        "km",
+        "so",
+        "mr",
+        "ae"
+      ]
+    },
+    {
+      "id": "arab.route01.capital",
+      "chapter": "arab",
+      "title": "العالم العربي",
+      "difficulty": "exploration",
+      "capital": [
+        "dz",
+        "ly",
+        "sd",
+        "dj",
+        "km",
+        "so",
+        "mr"
+      ]
+    },
+    {
+      "id": "arab.route01.location",
+      "chapter": "arab",
+      "title": "العالم العربي",
+      "difficulty": "exploration",
+      "location": [
+        "dz",
+        "eg",
+        "ly",
+        "tn",
+        "dj",
+        "km",
+        "mr",
+        "ae",
+        "bh"
+      ]
+    },
+    {
+      "id": "arab.route01.outline",
+      "chapter": "arab",
+      "title": "العالم العربي",
+      "difficulty": "mastery",
+      "outline": [
+        "dz",
+        "eg",
+        "ly",
+        "tn",
+        "dj",
+        "km",
+        "mr",
+        "ae",
+        "bh"
+      ]
+    },
+    {
+      "id": "arab.route02.flag",
+      "chapter": "arab",
+      "title": "غرب آسيا",
+      "difficulty": "exploration",
+      "flag": [
+        "bh",
+        "iq",
+        "kw",
+        "lb",
+        "om",
+        "ps",
+        "qa",
+        "sy",
+        "ye"
+      ]
+    },
+    {
+      "id": "arab.route02.capital",
+      "chapter": "arab",
+      "title": "غرب آسيا",
+      "difficulty": "exploration",
+      "capital": [
+        "ae",
+        "bh",
+        "iq",
+        "kw",
+        "lb",
+        "om",
+        "qa",
+        "sy"
+      ]
+    },
+    {
+      "id": "arab.route02.location",
+      "chapter": "arab",
+      "title": "غرب آسيا",
+      "difficulty": "exploration",
+      "location": [
+        "iq",
+        "jo",
+        "kw",
+        "lb",
+        "om",
+        "qa",
+        "sa",
+        "sy",
+        "ye"
+      ]
+    },
+    {
+      "id": "arab.route02.outline",
+      "chapter": "arab",
+      "title": "غرب آسيا",
+      "difficulty": "mastery",
+      "outline": [
+        "iq",
+        "jo",
+        "kw",
+        "lb",
+        "om",
+        "qa",
+        "sa",
+        "sy",
+        "ye"
+      ]
+    },
+    {
+      "id": "world.expedition01",
+      "chapter": "world",
+      "title": "بين المحيطين",
+      "difficulty": "mastery",
+      "flag": [
+        "pt",
+        "jp",
+        "nz"
+      ],
+      "capital": [
+        "ca",
+        "us",
+        "ph"
+      ],
+      "location": [
+        "fj",
+        "au"
+      ],
+      "outline": [
+        "cl",
+        "pe"
+      ]
+    },
+    {
+      "id": "world.expedition02",
+      "chapter": "world",
+      "title": "مدن على الأنهار",
+      "difficulty": "mastery",
+      "flag": [
+        "iq",
+        "th",
+        "ar"
+      ],
+      "capital": [
+        "eg",
+        "bd",
+        "cz"
+      ],
+      "location": [
+        "fr",
+        "gh"
+      ],
+      "outline": [
+        "hu",
+        "vn"
+      ]
+    },
+    {
+      "id": "world.expedition03",
+      "chapter": "world",
+      "title": "طرق عبر الجبال",
+      "difficulty": "mastery",
+      "flag": [
+        "ma",
+        "af",
+        "ua",
+        "kg"
+      ],
+      "capital": [
+        "np",
+        "ge",
+        "tj"
+      ],
+      "location": [
+        "ch"
+      ],
+      "outline": [
+        "et",
+        "bo"
+      ]
+    },
+    {
+      "id": "world.expedition04",
+      "chapter": "world",
+      "title": "عبر خط الاستواء",
+      "difficulty": "mastery",
+      "flag": [
+        "ec",
+        "ke",
+        "st"
+      ],
+      "capital": [
+        "co",
+        "mv"
+      ],
+      "location": [
+        "ga",
+        "id",
+        "br"
+      ],
+      "outline": [
+        "ug",
+        "ki"
+      ]
+    },
+    {
+      "id": "world.expedition05",
+      "chapter": "world",
+      "title": "محطّات الجزر",
+      "difficulty": "mastery",
+      "flag": [
+        "mg",
+        "jm",
+        "pg"
+      ],
+      "capital": [
+        "mu",
+        "bb"
+      ],
+      "location": [
+        "is",
+        "sg",
+        "lk"
+      ],
+      "outline": [
+        "cu",
+        "to"
+      ]
+    },
+    {
+      "id": "world.expedition06",
+      "chapter": "world",
+      "title": "من المتوسط إلى البلطيق",
+      "difficulty": "mastery",
+      "flag": [
+        "es",
+        "tr",
+        "fi"
+      ],
+      "capital": [
+        "it",
+        "si",
+        "dk"
+      ],
+      "location": [
+        "gr",
+        "hr"
+      ],
+      "outline": [
+        "tn",
+        "ee"
+      ]
+    },
+    {
+      "id": "world.expedition07",
+      "chapter": "world",
+      "title": "سهوب وصحارى",
+      "difficulty": "mastery",
+      "flag": [
+        "mn",
+        "tm",
+        "uz"
+      ],
+      "capital": [
+        "kz",
+        "ne",
+        "jo"
+      ],
+      "location": [
+        "na",
+        "mr"
+      ],
+      "outline": [
+        "bw",
+        "tn"
+      ]
+    },
+    {
+      "id": "world.expedition08",
+      "chapter": "world",
+      "title": "الرحلة الكبرى",
+      "difficulty": "mastery",
+      "flag": [
+        "mx",
+        "bz",
+        "ao"
+      ],
+      "capital": [
+        "kr",
+        "gy",
+        "de"
+      ],
+      "location": [
+        "ke",
+        "pw"
+      ],
+      "outline": [
+        "ad",
+        "bs"
+      ]
+    }
+  ]
+}

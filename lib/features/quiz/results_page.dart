@@ -9,6 +9,7 @@ class ResultsPage extends StatelessWidget {
     super.key,
     required this.score,
     required this.earned,
+    required this.stamps,
     required this.mission,
     required this.bestStars,
     required this.remainingMistakes,
@@ -18,6 +19,7 @@ class ResultsPage extends StatelessWidget {
 
   final QuizScore score;
   final int earned;
+  final int stamps;
   final Mission? mission;
   final int bestStars;
   final int? remainingMistakes;
@@ -57,7 +59,17 @@ class ResultsPage extends StatelessWidget {
                   style: heading(context, size: 25),
                 ),
                 const SizedBox(height: 8),
-                if (inMission) Stars(score.stars, size: 31),
+                if (inMission)
+                  TweenAnimationBuilder<double>(
+                    tween: Tween(begin: .78, end: 1),
+                    duration: MediaQuery.disableAnimationsOf(context)
+                        ? Duration.zero
+                        : const Duration(milliseconds: 265),
+                    curve: Curves.easeOutBack,
+                    builder: (context, scale, child) =>
+                        Transform.scale(scale: scale, child: child),
+                    child: Stars(score.stars, size: 31),
+                  ),
                 const SizedBox(height: 6),
                 Text(
                   '${digits(score.correct)} من ${digits(score.total)} إجابات صحيحة',
@@ -78,6 +90,14 @@ class ResultsPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('نقاط الخبرة المكتسبة · ${digits(earned)}'),
+                if (stamps > 0)
+                  Text(
+                    'أختام جديدة في جوازك · ${digits(stamps)}',
+                    style: const TextStyle(
+                      color: Palette.tealInk,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
                 if (inMission)
                   Text('أفضل نتيجة · ${digits(bestStars)} من ٣ نجوم'),
                 if (remainingMistakes case final count?)

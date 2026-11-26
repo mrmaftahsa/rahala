@@ -84,7 +84,9 @@ class _MissionTile extends StatelessWidget {
     final caption = switch ((unlocked, stars, mission.chapter)) {
       (_, > 0, _) => 'مكتملة · يمكنك إعادتها',
       (true, _, _) => '${digits(mission.questions.length)} أسئلة · جاهزة للعب',
-      (false, _, Chapter.world) => 'أكمل محطات الفصول الأخرى',
+      (false, _, Chapter.world) when index == 0 =>
+        'أكمل المحطتين الأوليين في كل فصل',
+      (false, _, Chapter.world) => 'أكمل مسارات الفصول والمحطة السابقة',
       (false, _, _) when index == 0 => 'أكمل أول محطة في العالم العربي',
       _ => 'أكمل المحطة السابقة',
     };
@@ -175,8 +177,9 @@ class _MissionTile extends StatelessWidget {
 }
 
 class PracticePage extends StatefulWidget {
-  const PracticePage({super.key, required this.play});
+  const PracticePage({super.key, required this.play, this.hasMaps = true});
   final void Function(Chapter, QuizMode) play;
+  final bool hasMaps;
 
   @override
   State<PracticePage> createState() => _PracticePageState();
@@ -215,7 +218,7 @@ class _PracticePageState extends State<PracticePage> {
           spacing: 8,
           runSpacing: 5,
           children: [
-            for (final mode in QuizMode.values)
+            for (final mode in QuizMode.values.take(widget.hasMaps ? 4 : 2))
               ChoiceChip(
                 label: Text(mode.label),
                 selected: mode == _mode,

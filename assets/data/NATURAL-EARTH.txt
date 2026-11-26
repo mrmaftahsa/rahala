@@ -1,0 +1,11 @@
+Made with Natural Earth. Free vector and raster map data at naturalearthdata.com.
+
+Source: Natural Earth 1:10m Admin 0 Countries and Populated Places, release 5.1.2
+https://github.com/nvkelso/natural-earth-vector/tree/f1890d9f152c896d250a77557a5751a93d494776/10m_cultural
+
+Natural Earth places its raster and vector map data in the public domain.
+https://www.naturalearthdata.com/about/terms-of-use/
+
+Rahala simplified and quantized the source geometry for an offline educational
+atlas. It displays the source's de facto boundaries on a longitude/latitude
+projection. The game catalog includes 193 UN members and two observer states.

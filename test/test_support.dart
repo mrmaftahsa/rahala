@@ -4,7 +4,7 @@ import 'package:rahala/core/geography.dart';
 import 'package:rahala/core/progress.dart';
 
 GeographyCatalog loadCatalog() => GeographyCatalog.decode(
-  File('assets/data/geography.v1.json').readAsStringSync(),
+  File('test/fixtures/geography.v1.json').readAsStringSync(),
 );
 
 class MemoryProgressBackend implements ProgressBackend {
@@ -23,3 +23,7 @@ class MemoryProgressBackend implements ProgressBackend {
     snapshot = value;
   }
 }
+
+GeographyCatalog loadWorldCatalog() => GeographyCatalog.decode(
+  File('assets/data/geography.v2.json').readAsStringSync(),
+);

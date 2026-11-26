@@ -65,8 +65,17 @@ jobs:
           cp .github/gradle/maven-mirror.init.gradle "$gradle_init/rahala-maven-mirror.gradle"
           flutter build apk --debug
 
+      - name: Verify APK and signing certificate
+        run: |
+          apk=build/app/outputs/flutter-apk/app-debug.apk
+          sdk_bin="${ANDROID_HOME:-/usr/local/lib/android/sdk}/build-tools/36.0.0"
+          "$sdk_bin/apksigner" verify --verbose --print-certs "$apk"
+          "$sdk_bin/aapt" dump badging "$apk" | grep -E '^package:|^sdkVersion:|^application-label:|^native-code:'
+          unzip -tq "$apk"
+          sha256sum "$apk"
+
       - name: Upload APK
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: rahala-debug-apk
           path: build/app/outputs/flutter-apk/app-debug.apk

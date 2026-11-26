@@ -13,6 +13,7 @@ class HomePage extends StatelessWidget {
     required this.openChapter,
     required this.openPractice,
     required this.review,
+    required this.spacedReview,
   });
 
   final GameProgress progress;
@@ -20,6 +21,7 @@ class HomePage extends StatelessWidget {
   final ValueChanged<Chapter> openChapter;
   final VoidCallback openPractice;
   final VoidCallback review;
+  final VoidCallback spacedReview;
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +29,7 @@ class HomePage extends StatelessWidget {
     final mission = next ?? progress.catalog.missions.last;
     final journeyStarted = progress.value.bestStars.isNotEmpty;
     final reviewCount = progress.reviewIds.length;
+    final dueCount = progress.dueReviewIds.length;
     return PageBody(
       scrollKey: const PageStorageKey('adventure'),
       children: [
@@ -86,6 +89,14 @@ class HomePage extends StatelessWidget {
                   onPressed: review,
                   icon: const Icon(Icons.replay_rounded),
                   label: Text('مراجعة الأخطاء (${digits(reviewCount)})'),
+                ),
+              ],
+              if (dueCount > 0) ...[
+                const SizedBox(height: 8),
+                OutlinedButton.icon(
+                  onPressed: spacedReview,
+                  icon: const Icon(Icons.schedule_rounded),
+                  label: Text('مراجعة الذاكرة (${digits(dueCount)})'),
                 ),
               ],
             ],

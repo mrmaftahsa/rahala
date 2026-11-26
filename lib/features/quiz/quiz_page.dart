@@ -7,6 +7,9 @@ import '../../app/theme.dart';
 import '../../app/widgets.dart';
 import '../../core/geography.dart';
 import '../../core/progress.dart';
+import '../../core/world_atlas.dart';
+import '../atlas/world_map.dart';
+import 'map_question.dart';
 import 'results_page.dart';
 
 class QuizPage extends StatefulWidget {
@@ -14,14 +17,18 @@ class QuizPage extends StatefulWidget {
     super.key,
     required this.title,
     required this.progress,
+    required this.atlas,
     required this.makeDeck,
     required this.openNext,
     this.mission,
+    this.chapter = Chapter.world,
     this.review = false,
   });
 
   final String title;
   final GameProgress progress;
+  final AtlasSource atlas;
+  final Chapter chapter;
   final List<QuizQuestion> Function() makeDeck;
   final ValueChanged<Mission> openNext;
   final Mission? mission;
@@ -38,7 +45,9 @@ class _QuizPageState extends State<QuizPage> {
   int _index = 0;
   int _correct = 0;
   int _earned = 0;
-  String? _selected;
+  Country? _selected;
+  late Set<String> _initialStamps;
+  bool _hinted = false;
   bool _saving = false;
   bool _complete = false;
 
@@ -48,9 +57,9 @@ class _QuizPageState extends State<QuizPage> {
       widget.progress.value.reducedMotion ||
       MediaQuery.disableAnimationsOf(context);
 
-  Future<void> _answer(String choice) async {
+  Future<void> _answer(Country choice) async {
     if (_saving || _selected != null) return;
-    final correct = choice == _current.key.answer;
+    final correct = choice == _current.key.country;
     setState(() => _saving = true);
     try {
       final earned = await widget.progress.recordAnswer(
@@ -91,6 +100,7 @@ class _QuizPageState extends State<QuizPage> {
       setState(() {
         _index++;
         _selected = null;
+        _hinted = false;
       });
       _scroll.jumpTo(0);
       return;
@@ -130,7 +140,15 @@ class _QuizPageState extends State<QuizPage> {
       _earned = 0;
       _selected = null;
       _complete = false;
+      _hinted = false;
+      _initialStamps = widget.progress.value.stamps(widget.progress.catalog);
     });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _initialStamps = widget.progress.value.stamps(widget.progress.catalog);
   }
 
   @override
@@ -150,6 +168,10 @@ class _QuizPageState extends State<QuizPage> {
       return ResultsPage(
         score: score,
         earned: _earned,
+        stamps: widget.progress.value
+            .stamps(widget.progress.catalog)
+            .difference(_initialStamps)
+            .length,
         mission: mission,
         bestStars: mission == null
             ? 0
@@ -164,6 +186,11 @@ class _QuizPageState extends State<QuizPage> {
 
     final question = _current;
     final selected = _selected;
+    final answer = question.key.country;
+    final firstOther = question.options.firstWhere(
+      (option) => option != answer,
+    );
+    final canAnswer = selected == null && !_saving;
     return Scaffold(
       appBar: AppBar(title: Text(widget.title)),
       body: SafeArea(
@@ -183,32 +210,68 @@ class _QuizPageState extends State<QuizPage> {
                       total: _questions.length,
                     ),
                     const SizedBox(height: 12),
-                    _QuestionCard(question: question),
-                    const SizedBox(height: 12),
-                    for (final (index, choice) in question.choices.indexed)
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 8),
-                        child: _Choice(
-                          label: choice,
-                          letter: 'أبجد'[index],
-                          correct:
-                              selected != null && choice == question.key.answer,
-                          incorrect:
-                              selected == choice &&
-                              choice != question.key.answer,
-                          onTap: selected == null && !_saving
-                              ? () => _answer(choice)
-                              : null,
+                    if (question.key.mode == QuizMode.location)
+                      MapQuestion(
+                        key: ValueKey(question.key.id),
+                        question: question,
+                        source: widget.atlas,
+                        chapter: widget.mission?.chapter ?? widget.chapter,
+                        catalog: widget.progress.catalog,
+                        hinted: _hinted,
+                        selected: selected,
+                        onAnswer: canAnswer ? _answer : null,
+                      )
+                    else ...[
+                      _QuestionCard(question: question, atlas: widget.atlas),
+                      const SizedBox(height: 12),
+                      for (final (index, option) in question.options.indexed)
+                        if (!_hinted ||
+                            option == answer ||
+                            option == firstOther)
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 8),
+                            child: _Choice(
+                              label: question.labelFor(option),
+                              letter: 'أبجد'[index],
+                              correct: selected != null && option == answer,
+                              incorrect: selected == option && option != answer,
+                              onTap: canAnswer ? () => _answer(option) : null,
+                            ),
+                          ),
+                    ],
+                    if (selected == null &&
+                        widget.progress.catalog.schemaVersion >= 2)
+                      if (_hinted)
+                        Panel(
+                          color: Palette.mint,
+                          padding: const EdgeInsets.all(9),
+                          child: Text('تلميح · ${answer.region}'),
+                        )
+                      else
+                        TextButton.icon(
+                          onPressed: _saving
+                              ? null
+                              : () => setState(() => _hinted = true),
+                          icon: const Icon(Icons.lightbulb_outline_rounded),
+                          label: const Text('تلميح'),
                         ),
-                      ),
                     if (selected != null)
                       Column(
                         key: _feedbackKey,
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
-                          _Feedback(
-                            question: question,
-                            correct: selected == question.key.answer,
+                          TweenAnimationBuilder<double>(
+                            tween: Tween(begin: 0, end: 1),
+                            duration: _reduceMotion
+                                ? Duration.zero
+                                : const Duration(milliseconds: 195),
+                            curve: Curves.easeOut,
+                            builder: (context, value, child) =>
+                                Opacity(opacity: value, child: child),
+                            child: _Feedback(
+                              question: question,
+                              correct: selected == answer,
+                            ),
                           ),
                           const SizedBox(height: 9),
                           FilledButton(
@@ -281,49 +344,69 @@ class _QuestionProgress extends StatelessWidget {
 }
 
 class _QuestionCard extends StatelessWidget {
-  const _QuestionCard({required this.question});
+  const _QuestionCard({required this.question, required this.atlas});
   final QuizQuestion question;
+  final AtlasSource atlas;
 
   @override
   Widget build(BuildContext context) {
     final country = question.key.country;
-    final flag = question.key.mode == QuizMode.flag;
+    final prompt = switch (question.key.mode) {
+      QuizMode.flag => 'لأيّ دولة هذا العلم؟',
+      QuizMode.capital => 'ما عاصمة هذه الدولة؟',
+      QuizMode.outline => 'لأيّ دولة هذا الشكل؟',
+      QuizMode.location => throw StateError(
+        'Location uses the interactive map',
+      ),
+    };
+    final visual = switch (question.key.mode) {
+      QuizMode.flag => ColoredBox(
+        color: Palette.cream,
+        child: Padding(
+          padding: const EdgeInsets.all(4),
+          child: CountryFlag(
+            country: country,
+            width: 168,
+            height: 103,
+            reveal: false,
+          ),
+        ),
+      ),
+      QuizMode.capital => Column(
+        children: [
+          const Icon(
+            Icons.location_city_outlined,
+            color: Palette.tealInk,
+            size: 34,
+          ),
+          const SizedBox(height: 3),
+          Text(
+            country.name,
+            style: heading(context, size: 26, color: Palette.tealInk),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+      QuizMode.outline => AtlasContent(
+        source: atlas,
+        builder: (atlas) =>
+            CountryOutline(feature: atlas.countries[country.id]!),
+      ),
+      QuizMode.location => throw StateError(
+        'Location uses the interactive map',
+      ),
+    };
     return Panel(
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 13),
       child: Column(
         children: [
           Text(
-            flag ? 'لأيّ دولة هذا العلم؟' : 'ما عاصمة هذه الدولة؟',
+            prompt,
             style: heading(context, size: 22),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 9),
-          if (flag)
-            ColoredBox(
-              color: Palette.cream,
-              child: Padding(
-                padding: const EdgeInsets.all(4),
-                child: CountryFlag(
-                  country: country,
-                  width: 168,
-                  height: 103,
-                  reveal: false,
-                ),
-              ),
-            )
-          else ...[
-            const Icon(
-              Icons.location_city_outlined,
-              color: Palette.tealInk,
-              size: 34,
-            ),
-            const SizedBox(height: 3),
-            Text(
-              country.name,
-              style: heading(context, size: 26, color: Palette.tealInk),
-              textAlign: TextAlign.center,
-            ),
-          ],
+          visual,
         ],
       ),
     );
