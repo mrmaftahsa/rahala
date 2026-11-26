@@ -1,0 +1,27 @@
+import org.gradle.api.artifacts.repositories.MavenArtifactRepository
+
+// The Google-hosted Maven Central mirror avoids rate limits on shared CI runners.
+def centralMirror = 'https://maven-central.storage-download.googleapis.com/maven2/'
+
+def mirrorCentral = { repositories ->
+    repositories.withType(MavenArtifactRepository).configureEach { repository ->
+        if (repository.url?.host in ['repo.maven.apache.org', 'repo1.maven.org']) {
+            repository.url = URI.create(centralMirror)
+        }
+    }
+}
+
+gradle.beforeSettings { settings ->
+    // This hook reaches Flutter's included Gradle build as well as the app.
+    settings.pluginManagement.repositories {
+        maven { url = URI.create(centralMirror) }
+        google()
+        gradlePluginPortal()
+    }
+    mirrorCentral(settings.dependencyResolutionManagement.repositories)
+}
+
+gradle.beforeProject { project ->
+    mirrorCentral(project.buildscript.repositories)
+    mirrorCentral(project.repositories)
+}
